@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aditya Shukla - Client Project Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Password Page -->
+  <div id="password-page" class="page-container">
+    <div class="login-card">
+      <div class="login-branding">
+        <h1 class="login-name">Aditya Shukla</h1>
+        <p class="login-title">Video Editor</p>
+      </div>
+      
+      <form id="login-form">
+        <input type="password" id="password-input" placeholder="Enter password" required />
+        <button type="submit" id="login-button">Enter</button>
+      </form>
+      
+      <div id="error-message" class="error-text hidden">Wrong password. Try again.</div>
+    </div>
+  </div>
+
+  <!-- Dashboard Page -->
+  <div id="dashboard-page" class="page-container hidden">
+    <!-- Sticky Header -->
+    <header class="sticky-header">
+      <div class="header-content">
+        <div class="header-left">
+          <span class="header-name">Aditya Shukla</span>
+          <span class="header-title">Video Editor</span>
+        </div>
+        <div class="header-right">
+          Shorts ₹300 · &lt;20 min ₹750 · &gt;20 min ₹1000
+        </div>
+      </div>
+      <div class="header-divider"></div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="dashboard-content">
+      <!-- Loading State -->
+      <div id="loading-state" class="state-message">
+        Loading projects...
+      </div>
+
+      <!-- Fetch Error State -->
+      <div id="load-error" class="state-message error-message-text hidden">
+        Could not load projects. Please refresh.
+      </div>
+
+      <!-- Empty State -->
+      <div id="empty-state" class="state-message hidden">
+        No projects yet.
+      </div>
+
+      <!-- Dashboard Data Section (hidden during loading/error) -->
+      <div id="dashboard-data" class="hidden">
+        <!-- Stats Row -->
+        <section class="stats-row">
+          <div class="stat-card">
+            <div class="stat-value" id="stat-total">0</div>
+            <div class="stat-label">Total Projects</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value" id="stat-due">₹0</div>
+            <div class="stat-label">Amount Due</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value" id="stat-received">₹0</div>
+            <div class="stat-label">Amount Received</div>
+          </div>
+        </section>
+
+        <!-- Mobile Pricing Row -->
+        <div class="mobile-pricing-row">
+          Shorts ₹300 · &lt;20 min ₹750 · &gt;20 min ₹1000
+        </div>
+
+        <!-- Project Table (Desktop) -->
+        <section class="table-container">
+          <table class="project-table" id="project-table">
+            <thead>
+              <tr>
+                <th style="width: 50px;">#</th>
+                <th>Project</th>
+                <th style="width: 120px;">Type</th>
+                <th style="width: 130px;">Date</th>
+                <th style="width: 110px;">Price</th>
+                <th style="width: 80px; text-align: center;">Drive</th>
+                <th style="width: 130px;">Status</th>
+                <th style="width: 120px;">Payment</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+            <tbody id="table-body">
+              <!-- Dynamically populated -->
+            </tbody>
+          </table>
+        </section>
+
+        <!-- Project Cards (Mobile) -->
+        <section class="cards-container" id="cards-container">
+          <!-- Dynamically populated -->
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
