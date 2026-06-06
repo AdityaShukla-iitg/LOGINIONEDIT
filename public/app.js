@@ -191,10 +191,12 @@ document.addEventListener('DOMContentLoaded', () => {
       // Col 6: Drive icon button
       const tdDrive = document.createElement('td');
       tdDrive.style.textAlign = 'center';
-      if (proj.driveLink) {
+      const rawDriveLink = (proj.driveLink || '').trim();
+      const isSecureDriveLink = rawDriveLink.startsWith('http://') || rawDriveLink.startsWith('https://');
+      if (isSecureDriveLink) {
         const driveLink = document.createElement('a');
         driveLink.className = 'drive-icon-btn';
-        driveLink.href = proj.driveLink;
+        driveLink.href = rawDriveLink;
         driveLink.target = '_blank';
         driveLink.rel = 'noopener noreferrer';
         driveLink.innerHTML = `
@@ -320,11 +322,13 @@ document.addEventListener('DOMContentLoaded', () => {
       row3.appendChild(deliveryBadge);
       card.appendChild(row3);
 
-      // Row 4: Full-width button if Drive Link exists
-      if (proj.driveLink) {
+      // Row 4: Full-width button if secure Drive Link exists
+      const rawDriveLink = (proj.driveLink || '').trim();
+      const isSecureDriveLink = rawDriveLink.startsWith('http://') || rawDriveLink.startsWith('https://');
+      if (isSecureDriveLink) {
         const driveLinkBtn = document.createElement('a');
         driveLinkBtn.className = 'card-drive-btn';
-        driveLinkBtn.href = proj.driveLink;
+        driveLinkBtn.href = rawDriveLink;
         driveLinkBtn.target = '_blank';
         driveLinkBtn.rel = 'noopener noreferrer';
         driveLinkBtn.textContent = 'Open Delivery Folder';
