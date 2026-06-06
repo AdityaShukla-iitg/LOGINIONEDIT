@@ -356,4 +356,20 @@ document.addEventListener('DOMContentLoaded', () => {
       cardsContainer.appendChild(card);
     });
   }
+
+  // Disable right-click context menu to prevent inspecting
+  document.addEventListener('contextmenu', (e) => {
+    e.preventDefault();
+  });
+
+  // Disable developer tool keyboard shortcuts
+  document.addEventListener('keydown', (e) => {
+    if (
+      e.key === 'F12' ||
+      (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'i' || e.key === 'J' || e.key === 'j')) ||
+      (e.ctrlKey && (e.key === 'U' || e.key === 'u'))
+    ) {
+      e.preventDefault();
+    }
+  });
 });
