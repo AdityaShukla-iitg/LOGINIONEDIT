@@ -140,20 +140,40 @@
       <div id="tab-content-sponsors" class="hidden">
         <div class="sponsors-header-container">
           <h2 class="sponsors-title">Sponsor Directory</h2>
-          <p class="sponsors-subtitle">15 anime-adjacent D2C brands to pitch for Animachar visual sponsorship placement (June 2026)</p>
+          <p class="sponsors-subtitle">Anime-adjacent D2C brand targets with verified contact details for sponsorship outreach (June 2026)</p>
         </div>
         
         <div class="sponsors-toolbar">
           <input type="text" id="sponsor-search" placeholder="Search brands, contacts, or rationale..." />
           <div class="sponsor-filters">
-            <button class="filter-btn active" data-filter="all">All (15)</button>
-            <button class="filter-btn" data-filter="apparel">Apparel (7)</button>
-            <button class="filter-btn" data-filter="art">Art & Prints (4)</button>
-            <button class="filter-btn" data-filter="sub">Subscription (4)</button>
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="apparel">Apparel</button>
+            <button class="filter-btn" data-filter="art">Art & Prints</button>
+            <button class="filter-btn" data-filter="sub">Subscription</button>
           </div>
         </div>
 
-        <div class="sponsors-grid" id="sponsors-grid">
+        <!-- Sponsors Table Container -->
+        <div class="sponsor-table-wrapper">
+          <table class="sponsor-table" id="sponsor-table">
+            <thead>
+              <tr>
+                <th>Brand Name</th>
+                <th>Category</th>
+                <th>Email</th>
+                <th>Instagram</th>
+                <th>Website</th>
+                <th>Founders / Others</th>
+              </tr>
+            </thead>
+            <tbody id="sponsor-table-body">
+              <!-- Dynamically populated -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Sponsors Detailed Section -->
+        <div class="sponsors-details-list" id="sponsors-details-list">
           <!-- Dynamically populated -->
         </div>
       </div>
