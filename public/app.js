@@ -386,90 +386,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const SPONSORS_DATA = [
     {
-      name: "Xenpachi",
+      name: "The Souled Store",
       category: "apparel",
       priority: "hot",
       status: "Active",
-      desc: "Japanese streetwear aesthetics, bootstrapped from Jaipur. Anime-first identity, premium build quality, cult following. Already spending on ads. Perfect fit for passive wall placement on an anime channel.",
-      outreach: "Premium Curator. Reaching discerning, high-intent collectors who possess disposable income for premium acquisitions. Avoids grueling Instagram content mill through passive placement.",
+      desc: "The absolute market leader in Indian pop-culture and fandom merchandise. Holds official partnerships with major anime franchises (Naruto, Jujutsu Kaisen, One Piece, etc.). Highly rated by millions of customers. Acquired popular competitor Redwolf in 2025.",
+      outreach: "Direct creator collaborations and styling integrations. They frequently run paid sponsorships and gifting campaigns for content creators across YouTube and Instagram.",
       contacts: [
-        { label: "Email", value: "care@xenpachi.in" },
-        { label: "Email Alt", value: "care@xenpachi.com" },
-        { label: "Instagram", value: "@xenpachi.india" },
-        { label: "Website", value: "xenpachi.com" },
-        { label: "Founder Details", value: "Nitin Sajwan, Vinod Mittal (Designated Partners). vinodmittal@hotmail.com" },
-        { label: "Note", value: "Founder active on @xenpachi.uncensored (BTS account)" }
-      ]
-    },
-    {
-      name: "Harsido",
-      category: "apparel",
-      priority: "hot",
-      status: "Active",
-      desc: "Self-described 'leading anime merch brand in India.' Active drops, Cash on Delivery available, India-wide shipping. Actively growing Instagram presence.",
-      outreach: "Niche Apparel. Direct audience match for Animachar. Reaching trend-conscious viewers seeking everyday wear and responsive to YouTube integrations.",
-      contacts: [
-        { label: "Instagram", value: "@harsido" },
-        { label: "Website", value: "harsido.com" },
-        { label: "Note", value: "DM the Instagram directly - founder runs it personally (9.2K followers)" }
-      ]
-    },
-    {
-      name: "Anime Devta",
-      category: "apparel",
-      priority: "hot",
-      status: "Active",
-      desc: "India's first 'Indian Anime' merch brand blending Bharat culture with anime art. Jaipur based, co-founded by engineering and design students at UPES and incubated under the Runway program. Raised pre-incubation funding.",
-      outreach: "Community-Driven Startup. Merges local culture and anime art. targets Tier-2/Tier-3 cities with affordable pricing, free shipping prepaid, and low COD fees.",
-      contacts: [
-        { label: "Email", value: "support@animedevta.com" },
-        { label: "Instagram", value: "@anime_devta" },
-        { label: "Website", value: "animedevta.com" },
-        { label: "Founder", value: "Dev Taneja, Himangshu Goswami" },
-        { label: "Note", value: "Shark Tank India S3/S5 finalist. Co-founders are ex-anime YouTubers themselves. LinkedIn: Dev Taneja" }
-      ]
-    },
-    {
-      name: "Weeboholic",
-      category: "apparel",
-      priority: "warm",
-      status: "Active",
-      desc: "Anime streetwear startup based in Zirakpur, Punjab. Focuses on specialized silhouettes including oversized anime jerseys and Hawaiian shirts.",
-      outreach: "Community-Driven Startup. Focuses on premium oversized jerseys and Hawaiian cuts, addressing the modern streetwear preferences of the anime community.",
-      contacts: [
-        { label: "Email", value: "info.weeboholic@gmail.com" },
-        { label: "Instagram", value: "@weeboholicofficial" },
-        { label: "Website", value: "weeboholic.com" },
-        { label: "Note", value: "Zirakpur, Punjab D2C startup." }
-      ]
-    },
-    {
-      name: "AnimeOryx",
-      category: "apparel",
-      priority: "warm",
-      status: "Active",
-      desc: "Bootstrapped anime apparel brand operating under 'Otaku's Trend' from Guna, Madhya Pradesh. Known for custom prints and material quality.",
-      outreach: "Premium Materials. Uses 250 GSM French Terry Cotton. Targets underrated anime fandoms alongside mainstream titles to reach dedicated collectors.",
-      contacts: [
-        { label: "Email", value: "animeoryx.tee@gmail.com" },
-        { label: "Instagram", value: "@animeoryx" },
-        { label: "Website", value: "animeoryx.in" },
-        { label: "Note", value: "Otaku's Trend, Guna, Madhya Pradesh." }
+        { label: "Partnership Email", value: "connect@thesouledstore.com" },
+        { label: "Influencer Collab Email", value: "modelling@thesouledstore.com" },
+        { label: "Instagram", value: "@thesouledstore" },
+        { label: "Website", value: "thesouledstore.com" },
+        { label: "Founders", value: "Vedang Patel (Co-founder & CEO), Aditya Sharma, Rohin Samtaney" },
+        { label: "Tip", value: "Outreach to their Brand and Influencer Marketing team on LinkedIn is highly recommended." }
       ]
     },
     {
       name: "Bonkers Corner",
       category: "apparel",
-      priority: "try",
+      priority: "hot",
       status: "Active",
-      desc: "streetwear giant operating from Ulhasnagar, Maharashtra. Bootstrapped in 2020 by Shubham Gupta and Saniya Shaikh to a Rs 300 Crore valuation. Moat is fully vertically integrated in-house manufacturing, allowing fast collections drops.",
-      outreach: "Mainstream Streetwear Giant. Maintaining absolute cultural dominance and top-of-mind recall among Gen-Z consumers. Relies on fast drops and massive scaling.",
+      desc: "Highly rated streetwear and oversized apparel brand with vertical integration (in-house manufacturing). Extremely popular among Gen-Z and widely known for aggressive influencer marketing and creator collections.",
+      outreach: "Promotional campaigns, video placements, and streetwear lookbooks. Highly responsive to fashion and lifestyle content creators.",
       contacts: [
-        { label: "Email", value: "info@bonkerscorner.com" },
+        { label: "Business Email", value: "business@bonkerscorner.com" },
         { label: "Instagram", value: "@bonkerscorner" },
         { label: "Website", value: "bonkerscorner.com" },
-        { label: "Founder", value: "Shubham Gupta (Founder and CEO). LinkedIn: Shubham Gupta" },
-        { label: "Note", value: "Appeared on Shark Tank India S5; secured Series A funding ($10.7M) from India SME Investments." }
+        { label: "Founder", value: "Shubham Gupta (Founder & CEO)" },
+        { label: "Tip", value: "The business email is specifically monitored for creator campaigns and customization/bulk deals." }
       ]
     },
     {
@@ -477,40 +421,58 @@ document.addEventListener('DOMContentLoaded', () => {
       category: "apparel",
       priority: "hot",
       status: "Active",
-      desc: "A massive pop-culture and anime merchandise retailer in India. Offers extensive inventory from college fests to global e-commerce. Foundational brand from which Xenpachi evolved.",
-      outreach: "Mainstream Streetwear. Sagar Agarwal (Co-founder / Marketing and Sales Head) LinkedIn active. Scaled brand with deep roots in creator community.",
+      desc: "India's premier dedicated anime-only merchandise retailer. Extremely high brand affinity and rating within the Indian anime community. Regularly sponsors gaming channels, anime event coverage, and content creators.",
+      outreach: "Endemic sponsorships. Ideal for direct mid-roll placements, video sponsorships, and exclusive affiliate discount codes for your viewers.",
       contacts: [
-        { label: "Email", value: "care@comicsense.xyz" },
+        { label: "Partnership Email", value: "care@comicsense.xyz" },
         { label: "Instagram", value: "@comicsense.store" },
         { label: "Website", value: "comicsense.store" },
-        { label: "Founder", value: "Sagar Agarwal" }
+        { label: "Founder", value: "Sagar Agarwal (Co-founder & Marketing Lead)" },
+        { label: "Tip", value: "Connecting directly with Sagar Agarwal on LinkedIn is the most effective way to pitch visual integrations." }
       ]
     },
     {
-      name: "Weebshop India",
-      category: "art",
-      priority: "try",
+      name: "Xenpachi",
+      category: "apparel",
+      priority: "hot",
       status: "Active",
-      desc: "Merchandise aggregator store based in Chennai. Offers wide catalog including figures, cosplay accessories, and prints. Founded by SP Praveen Raj.",
-      outreach: "Grassroots Merchandiser. Authentic community ties. Co-founder SP Praveen Raj also ran 'Anime Nadu', the first physical anime newspaper in India.",
+      desc: "Cult-favorite premium anime streetwear brand based out of Jaipur. Known for high GSM cotton and artistic designs. Very active in running promotions and sponsoring pop-culture channels.",
+      outreach: "Creative integrations, apparel gifting, and passive background/wall placement. Excellent sponsor for high-production anime review channels.",
       contacts: [
-        { label: "Email", value: "support@weebshop.in" },
-        { label: "Instagram", value: "@weebshopindia" },
-        { label: "Website", value: "weebshop.in" },
-        { label: "Founder", value: "SP Praveen Raj (pvnstarlet), Yokesh Ananthakrishnan" }
+        { label: "Founder Direct Email", value: "vinodmittal@hotmail.com" },
+        { label: "Partnership Email", value: "care@xenpachi.in" },
+        { label: "Instagram", value: "@xenpachi.india" },
+        { label: "Website", value: "xenpachi.com" },
+        { label: "Founders", value: "Nitin Sajwan, Vinod Mittal" },
+        { label: "Tip", value: "The founders are actively involved in operations and can be pitched via the direct email or Instagram DM." }
       ]
     },
     {
       name: "Crunchyroll India",
       category: "sub",
-      priority: "try",
+      priority: "hot",
       status: "Active",
-      desc: "Sony Pictures Entertainment subsidiary driving subscription growth in India. running large celebrity campaigns (Rashmika Mandanna, Shubman Gill) and partnerships.",
-      outreach: "Corporate Vanguard. Strategic partnership to acquire subscribers, reduce character acquisition costs, and normalize anime viewing locally.",
+      desc: "The official Sony Pictures anime streaming service in India. Highly rated official distributor. Driving subscription growth through massive marketing budgets, including celebrity endorsements and major creator sponsorships.",
+      outreach: "Subscription-focused campaigns, official anime promotional deals, and community events. Pitch to their APAC marketing team.",
       contacts: [
-        { label: "Email", value: "india@crunchyroll.com" },
+        { label: "Partnerships Email", value: "india@crunchyroll.com" },
         { label: "Website", value: "crunchyroll.com" },
-        { label: "Founder", value: "Akshat Sahu (VP GTM & Partnerships Marketing, APAC & MENA), Vikas Boni (Senior Director and India Lead)" }
+        { label: "Key Executives", value: "Akshat Sahu (VP GTM & Partnerships APAC), Vikas Boni (India Lead)" },
+        { label: "Tip", value: "Reach out to Akshat Sahu or Vikas Boni on LinkedIn to pitch custom creator partnerships." }
+      ]
+    },
+    {
+      name: "Bewakoof",
+      category: "apparel",
+      priority: "hot",
+      status: "Active",
+      desc: "Major pop-culture D2C fashion platform in India, now backed by Aditya Birla TMRW. Highly rated for trendy, affordable official merchandise (Marvel, Disney, Anime). Heavily relies on influencer and creator promotions.",
+      outreach: "High-volume influencer campaigns and affiliate commission partnerships. Great for styling integrations and long-form review channels.",
+      contacts: [
+        { label: "Partnership Email", value: "care@bewakoof.com" },
+        { label: "Instagram", value: "@bewakoofofficial" },
+        { label: "Website", value: "bewakoof.com" },
+        { label: "Tip", value: "Best results come from directly pitching their Influencer Marketing Managers or PR Team on LinkedIn." }
       ]
     }
   ];
