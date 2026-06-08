@@ -392,6 +392,12 @@ document.addEventListener('DOMContentLoaded', () => {
       status: "Active",
       desc: "The absolute market leader in Indian pop-culture and fandom merchandise. Holds official partnerships with major anime franchises (Naruto, Jujutsu Kaisen, One Piece, etc.). Highly rated by millions of customers. Acquired popular competitor Redwolf in 2025.",
       outreach: "Direct creator collaborations and styling integrations. They frequently run paid sponsorships and gifting campaigns for content creators across YouTube and Instagram.",
+      leadScore: "9.8 / 10",
+      googleRating: "4.4 ★ (4,500+ reviews)",
+      companySize: "~500-1,000 employees",
+      paidAds: "Yes (Meta, Google, YouTube)",
+      followers: "1.4M followers",
+      products: "Licensed anime clothing, bags, accessories, and shoes",
       contacts: [
         { label: "Partnership Email", value: "connect@thesouledstore.com" },
         { label: "Influencer Collab Email", value: "modelling@thesouledstore.com" },
@@ -408,6 +414,12 @@ document.addEventListener('DOMContentLoaded', () => {
       status: "Active",
       desc: "Highly rated streetwear and oversized apparel brand with vertical integration (in-house manufacturing). Extremely popular among Gen-Z and widely known for aggressive influencer marketing and creator collections.",
       outreach: "Promotional campaigns, video placements, and streetwear lookbooks. Highly responsive to fashion and lifestyle content creators.",
+      leadScore: "9.5 / 10",
+      googleRating: "4.5 ★ (650+ reviews)",
+      companySize: "~100-200 employees",
+      paidAds: "Yes (Meta, Instagram)",
+      followers: "520K followers",
+      products: "Oversized anime streetwear, hoodies, t-shirts, sweatpants, and drops",
       contacts: [
         { label: "Business Email", value: "business@bonkerscorner.com" },
         { label: "Instagram", value: "@bonkerscorner" },
@@ -417,12 +429,80 @@ document.addEventListener('DOMContentLoaded', () => {
       ]
     },
     {
+      name: "Bewakoof",
+      category: "apparel",
+      priority: "hot",
+      status: "Active",
+      desc: "Major pop-culture D2C fashion platform in India, now backed by Aditya Birla TMRW. Highly rated for trendy, affordable official merchandise (Marvel, Disney, Anime). Heavily relies on influencer and creator promotions.",
+      outreach: "High-volume influencer campaigns and affiliate commission partnerships. Great for styling integrations and long-form review channels.",
+      leadScore: "9.3 / 10",
+      googleRating: "4.2 ★ (1,200+ reviews)",
+      companySize: "~500-1,000 employees",
+      paidAds: "Yes (Meta, Google Performance Max, YouTube)",
+      followers: "1.7M followers",
+      products: "Pop-culture graphic clothing, hoodies, notebooks, and mobile covers",
+      contacts: [
+        { label: "Partnership Email", value: "care@bewakoof.com" },
+        { label: "Instagram", value: "@bewakoofofficial" },
+        { label: "Website", value: "bewakoof.com" },
+        { label: "Tip", value: "Best results come from directly pitching their Influencer Marketing Managers or PR Team on LinkedIn." }
+      ]
+    },
+    {
+      name: "Comic Con India",
+      category: "sub",
+      priority: "hot",
+      status: "Active",
+      desc: "The largest pop-culture celebration in India, organizing large-scale conventions featuring cosplay, merchandise, gaming, and celebrity guests across multiple major cities.",
+      outreach: "Convention coverage, live event sponsorships, brand activation, and booth promotions. Best for creators targeting gaming and pop-culture audiences.",
+      leadScore: "9.2 / 10",
+      googleRating: "4.4 ★ (150+ reviews)",
+      companySize: "~50-100 employees",
+      paidAds: "Yes (Meta, Google Ads)",
+      followers: "155K followers",
+      products: "Event tickets, sponsorships, booth rentals, and merchandise",
+      contacts: [
+        { label: "Business Email", value: "info@comicconindia.com" },
+        { label: "Instagram", value: "@comicconindia" },
+        { label: "Website", value: "comicconindia.com" },
+        { label: "Founder", value: "Jatin Varma (Founder)" },
+        { label: "Tip", value: "Contact info@comicconindia.com for sponsorships and stall queries, or message them on LinkedIn." }
+      ]
+    },
+    {
+      name: "The Entertainment Store",
+      category: "apparel",
+      priority: "hot",
+      status: "Active",
+      desc: "A widely popular retail destination for authentic pop-culture, anime, and comic book collectibles in India, maintaining physical outlets in Bangalore and Pune alongside their e-commerce storefront.",
+      outreach: "Figure reviews, unboxing videos, and manga store walk-throughs. Strong potential for localized visual product integrations.",
+      leadScore: "8.9 / 10",
+      googleRating: "4.3 ★ (3,000+ reviews)",
+      companySize: "~20-50 employees",
+      paidAds: "Yes (Google Local Map ads, Facebook Retargeting)",
+      followers: "25K followers",
+      products: "Authentic anime figures (Bandai, Banpresto), manga, keychains, and licensed clothing",
+      contacts: [
+        { label: "Founder Email", value: "satish@entertainmentstore.in" },
+        { label: "Operations Email", value: "manager@entertainmentstore.in" },
+        { label: "Instagram", value: "@theentertainmentstore" },
+        { label: "Website", value: "entertainmentstore.in" },
+        { label: "Founders", value: "Sunil, Satish" }
+      ]
+    },
+    {
       name: "ComicSense",
       category: "apparel",
       priority: "hot",
       status: "Active",
       desc: "India's premier dedicated anime-only merchandise retailer. Extremely high brand affinity and rating within the Indian anime community. Regularly sponsors gaming channels, anime event coverage, and content creators.",
       outreach: "Endemic sponsorships. Ideal for direct mid-roll placements, video sponsorships, and exclusive affiliate discount codes for your viewers.",
+      leadScore: "8.8 / 10",
+      googleRating: "4.4 ★ (120+ reviews)",
+      companySize: "~10-30 employees",
+      paidAds: "Yes (Meta Ads, Creator Sponsorships)",
+      followers: "180K followers",
+      products: "Anime graphic tees, hoodies, katanas, and accessories",
       contacts: [
         { label: "Partnership Email", value: "care@comicsense.xyz" },
         { label: "Instagram", value: "@comicsense.store" },
@@ -438,6 +518,12 @@ document.addEventListener('DOMContentLoaded', () => {
       status: "Active",
       desc: "Cult-favorite premium anime streetwear brand based out of Jaipur. Known for high GSM cotton and artistic designs. Very active in running promotions and sponsoring pop-culture channels.",
       outreach: "Creative integrations, apparel gifting, and passive background/wall placement. Excellent sponsor for high-production anime review channels.",
+      leadScore: "8.5 / 10",
+      googleRating: "4.6 ★ (50+ reviews)",
+      companySize: "~5-15 employees",
+      paidAds: "Yes (Meta Ads, YouTube integrations)",
+      followers: "42K followers",
+      products: "High GSM custom-fit anime hoodies, shirts, and streetwear designs",
       contacts: [
         { label: "Founder Direct Email", value: "vinodmittal@hotmail.com" },
         { label: "Partnership Email", value: "care@xenpachi.in" },
@@ -448,31 +534,43 @@ document.addEventListener('DOMContentLoaded', () => {
       ]
     },
     {
-      name: "Crunchyroll India",
-      category: "sub",
-      priority: "hot",
-      status: "Active",
-      desc: "The official Sony Pictures anime streaming service in India. Highly rated official distributor. Driving subscription growth through massive marketing budgets, including celebrity endorsements and major creator sponsorships.",
-      outreach: "Subscription-focused campaigns, official anime promotional deals, and community events. Pitch to their APAC marketing team.",
-      contacts: [
-        { label: "Partnerships Email", value: "india@crunchyroll.com" },
-        { label: "Website", value: "crunchyroll.com" },
-        { label: "Key Executives", value: "Akshat Sahu (VP GTM & Partnerships APAC), Vikas Boni (India Lead)" },
-        { label: "Tip", value: "Reach out to Akshat Sahu or Vikas Boni on LinkedIn to pitch custom creator partnerships." }
-      ]
-    },
-    {
-      name: "Bewakoof",
+      name: "Baka Store",
       category: "apparel",
       priority: "hot",
       status: "Active",
-      desc: "Major pop-culture D2C fashion platform in India, now backed by Aditya Birla TMRW. Highly rated for trendy, affordable official merchandise (Marvel, Disney, Anime). Heavily relies on influencer and creator promotions.",
-      outreach: "High-volume influencer campaigns and affiliate commission partnerships. Great for styling integrations and long-form review channels.",
+      desc: "Specialized anime collectibles store based in Chennai, highly rated for importing katanas, figures, and cosplay props with pan-India distribution.",
+      outreach: "Cosplay prop reviews, katana demonstrations, and anime figurine showcases. Great for video integration sponsorships.",
+      leadScore: "8.2 / 10",
+      googleRating: "4.8 ★ (185+ reviews)",
+      companySize: "~5-10 employees",
+      paidAds: "Low (Local organic social promotions)",
+      followers: "5.2K followers",
+      products: "Cosplay swords/katanas, anime figures, and collectible accessories",
       contacts: [
-        { label: "Partnership Email", value: "care@bewakoof.com" },
-        { label: "Instagram", value: "@bewakoofofficial" },
-        { label: "Website", value: "bewakoof.com" },
-        { label: "Tip", value: "Best results come from directly pitching their Influencer Marketing Managers or PR Team on LinkedIn." }
+        { label: "Business Email", value: "info.baakastore@gmail.com" },
+        { label: "Instagram", value: "@BakaStoreOffl" },
+        { label: "Website", value: "bakastore.in" },
+        { label: "Tip", value: "They offer shipping across India and often coordinate with local promoters via email or Instagram DM." }
+      ]
+    },
+    {
+      name: "Nerd Arena",
+      category: "apparel",
+      priority: "hot",
+      status: "Active",
+      desc: "Mumbai-based physical and online collector store stocking authentic action figures, anime toys, and superhero merchandise from Bandai and Banpresto.",
+      outreach: "Collectible reviews, premium figure unboxings, and direct promotional discount links for collectors.",
+      leadScore: "8.0 / 10",
+      googleRating: "4.4 ★ (200+ reviews)",
+      companySize: "~5-10 employees",
+      paidAds: "Low (Search ads, influencer reviews)",
+      followers: "11K followers",
+      products: "Authentic import action figures, keychains, and pop culture accessories",
+      contacts: [
+        { label: "Business Email", value: "sales@nerdarena.in" },
+        { label: "Instagram", value: "@nerdarenaindia" },
+        { label: "Website", value: "nerdarena.in" },
+        { label: "Tip", value: "Outreach for promotions can be made directly via email or their Bandra physical outlet manager." }
       ]
     }
   ];
@@ -523,6 +621,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const nameMatch = item.name.toLowerCase().includes(query);
         const descMatch = item.desc.toLowerCase().includes(query);
         const outreachMatch = item.outreach.toLowerCase().includes(query);
+        const productsMatch = (item.products || '').toLowerCase().includes(query);
+        const sizeMatch = (item.companySize || '').toLowerCase().includes(query);
         
         let contactsMatch = false;
         for (const c of item.contacts) {
@@ -531,7 +631,7 @@ document.addEventListener('DOMContentLoaded', () => {
             break;
           }
         }
-        matchesSearch = nameMatch || descMatch || outreachMatch || contactsMatch;
+        matchesSearch = nameMatch || descMatch || outreachMatch || contactsMatch || productsMatch || sizeMatch;
       }
 
       return matchesCat && matchesSearch;
@@ -636,6 +736,39 @@ document.addEventListener('DOMContentLoaded', () => {
       aboutEl.className = 'sponsor-detail-about';
       aboutEl.textContent = item.desc;
       detailBlock.appendChild(aboutEl);
+
+      // Render Metadata Grid (Lead Score, Google Rating, Instagram Size, Company Size, Paid Ads, Primary Products)
+      const metaGrid = document.createElement('div');
+      metaGrid.className = 'sponsor-metadata-grid';
+
+      const fields = [
+        { label: 'Lead Score', value: item.leadScore },
+        { label: 'Google Rating', value: item.googleRating },
+        { label: 'Instagram Size', value: item.followers },
+        { label: 'Company Size', value: item.companySize },
+        { label: 'Paid Ads Status', value: item.paidAds },
+        { label: 'Primary Products', value: item.products }
+      ];
+
+      fields.forEach(f => {
+        if (f.value) {
+          const itemEl = document.createElement('div');
+          itemEl.className = 'metadata-item';
+
+          const labelEl = document.createElement('span');
+          labelEl.className = 'metadata-label';
+          labelEl.textContent = f.label;
+
+          const valEl = document.createElement('span');
+          valEl.className = 'metadata-value';
+          valEl.textContent = f.value;
+
+          itemEl.appendChild(labelEl);
+          itemEl.appendChild(valEl);
+          metaGrid.appendChild(itemEl);
+        }
+      });
+      detailBlock.appendChild(metaGrid);
 
       // Why Should We Choose Them Section
       const whyEl = document.createElement('div');
