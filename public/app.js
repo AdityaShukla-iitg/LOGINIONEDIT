@@ -572,6 +572,197 @@ document.addEventListener('DOMContentLoaded', () => {
         { label: "Website", value: "nerdarena.in" },
         { label: "Tip", value: "Outreach for promotions can be made directly via email or their Bandra physical outlet manager." }
       ]
+    },
+    {
+      name: "Macmerise",
+      category: "apparel",
+      priority: "hot",
+      status: "Active",
+      desc: "Major pop-culture tech accessories and clothing brand based in Mumbai. Highly rated for officially licensed anime merchandise (Naruto, Disney, Marvel phone covers, audio gadgets, and apparel) with massive retail partnerships.",
+      outreach: "Apparel styling, tech skin demonstrations, and pop-culture gadget showcases. Excellent budget for social media influencer campaigns.",
+      leadScore: "9.1 / 10",
+      googleRating: "4.3 ★ (2,500+ reviews)",
+      companySize: "~50-100 employees",
+      paidAds: "Yes (Meta Ads, Google Search)",
+      followers: "100K followers",
+      products: "Anime phone cases, laptop skins, audio gear, and pop-culture apparel",
+      contacts: [
+        { label: "Business Email", value: "cs@macmerise.com" },
+        { label: "Partnership Email", value: "social@macmerise.com" },
+        { label: "Instagram", value: "@macmerise" },
+        { label: "Website", value: "macmerise.com" }
+      ]
+    },
+    {
+      name: "The Comic Book Store",
+      category: "apparel",
+      priority: "hot",
+      status: "Active",
+      desc: "India's first licensed retail comic book store, based in Khar, Bandra West, Mumbai. Highly rated by pop-culture collectors and selling comics, manga, action figures, and geek fashion.",
+      outreach: "Manga review series, bookstore walkthroughs, and anime collectible unboxings. High engagement with Mumbai otaku community.",
+      leadScore: "8.8 / 10",
+      googleRating: "4.6 ★ (150+ reviews)",
+      companySize: "~5-15 employees",
+      paidAds: "Yes (Local search and social ads)",
+      followers: "20K followers",
+      products: "Licensed comics, manga, figures, and pop-culture apparel",
+      contacts: [
+        { label: "Business Email", value: "contact@thecomicbookstore.in" },
+        { label: "Instagram", value: "@thecomicbookstore" },
+        { label: "Website", value: "thecomicbookstore.in" }
+      ]
+    },
+    {
+      name: "PRONK",
+      category: "apparel",
+      priority: "warm",
+      status: "Active",
+      desc: "Rapidly growing D2C fashion retailer based in Kolkata, West Bengal. They carry a large selection of oversized anime streetwear and graphic tees with nationwide distribution.",
+      outreach: "Streetwear lookbooks, styling videos, and seasonal drops. Great fit for fashion vloggers and Instagram aesthetic models.",
+      leadScore: "8.6 / 10",
+      googleRating: "4.2 ★ (Trustpilot reviews)",
+      companySize: "~10-30 employees",
+      paidAds: "Yes (Aggressive Meta Ads)",
+      followers: "80K followers",
+      products: "Oversized anime graphic tees, hoodies, and streetwear",
+      contacts: [
+        { label: "Business Email", value: "support@pronk.in" },
+        { label: "Instagram", value: "@pronkindia" },
+        { label: "Website", value: "pronk.in" }
+      ]
+    },
+    {
+      name: "Zams Fashion",
+      category: "apparel",
+      priority: "warm",
+      status: "Active",
+      desc: "Mumbai-based streetwear label focusing on premium cotton apparel infused with anime aesthetics. Very active in launching custom graphics drops.",
+      outreach: "Streetwear promotions, styling reels, and custom drop reviews. Active creator outreach.",
+      leadScore: "8.2 / 10",
+      googleRating: "4.3 ★ (50+ reviews)",
+      companySize: "~5-10 employees",
+      paidAds: "Yes (Local Meta promotions)",
+      followers: "15K followers",
+      products: "Premium cotton anime streetwear and graphic tees",
+      contacts: [
+        { label: "Business Email", value: "care@zamsfashion.in" },
+        { label: "Instagram", value: "@zamsfashion" },
+        { label: "Website", value: "zamsfashion.in" }
+      ]
+    },
+    {
+      name: "Custom Clans",
+      category: "apparel",
+      priority: "warm",
+      status: "Active",
+      desc: "Nagpur-based anime specialty store providing action figures, katanas, posters, and collectible anime accessories with a strong grassroots customer base.",
+      outreach: "Product showcases, custom prints, and katana unboxings. High relevance for local gaming and comic fan groups.",
+      leadScore: "8.1 / 10",
+      googleRating: "4.5 ★ (50+ reviews)",
+      companySize: "~5-10 employees",
+      paidAds: "Low (Organic community building)",
+      followers: "8K followers",
+      products: "Action figures, katanas, posters, and anime accessories",
+      contacts: [
+        { label: "Business Email", value: "info@customclans.in" },
+        { label: "Instagram", value: "@customclans" },
+        { label: "Website", value: "customclans.com" }
+      ]
+    },
+    {
+      name: "AnimeVerseStore",
+      category: "apparel",
+      priority: "warm",
+      status: "Active",
+      desc: "New Delhi-based e-commerce store focusing on aesthetic anime drops, graphic t-shirts, and rare collectibles from popular franchises like Naruto and JJK.",
+      outreach: "Visual mid-roll ads, apparel gifting, and affiliate discount promotions for anime review creators.",
+      leadScore: "8.0 / 10",
+      googleRating: "4.4 ★ (30+ reviews)",
+      companySize: "~3-5 employees",
+      paidAds: "Yes (Social media ads)",
+      followers: "12K followers",
+      products: "Aesthetic anime clothing, keychains, and accessories",
+      contacts: [
+        { label: "Business Email", value: "theanimeversestore@gmail.com" },
+        { label: "Instagram", value: "@theanimeversestore" },
+        { label: "Website", value: "animeversestore.in" }
+      ]
+    },
+    {
+      name: "Animemart",
+      category: "apparel",
+      priority: "warm",
+      status: "Active",
+      desc: "Pune-based D2C online store specializing in anime fashion, cozy hoodies, and custom graphic apparel for otaku audiences.",
+      outreach: "Gifting campaigns, clothing review vlogs, and custom lookbooks. Highly responsive to gaming and lifestyle vloggers.",
+      leadScore: "8.0 / 10",
+      googleRating: "4.5 ★ (50+ reviews)",
+      companySize: "~3-8 employees",
+      paidAds: "Yes (Periodic Meta promotions)",
+      followers: "12K followers",
+      products: "Otaku hoodies, graphic tees, and accessories",
+      contacts: [
+        { label: "Business Email", value: "hello@animemart.in" },
+        { label: "Instagram", value: "@animemart" },
+        { label: "Website", value: "animemart.in" }
+      ]
+    },
+    {
+      name: "Kawaii Kingdom",
+      category: "apparel",
+      priority: "warm",
+      status: "Active",
+      desc: "Delhi-based e-commerce platform offering cute anime, gaming, and pop-culture themed keychains, mousepads, plushies, and decor.",
+      outreach: "Desk setup setup showcases, cute merchandise hauls, and aesthetic unboxing videos.",
+      leadScore: "7.9 / 10",
+      googleRating: "4.5 ★ (40+ reviews)",
+      companySize: "~2-5 employees",
+      paidAds: "Yes (Pinterest and Meta ads)",
+      followers: "10K followers",
+      products: "Cute keychains, mousepads, plushies, and otaku decor",
+      contacts: [
+        { label: "Business Email", value: "tanejs01@gmail.com" },
+        { label: "Instagram", value: "@kawaiikingdom" },
+        { label: "Website", value: "kawaiikingdom.in" }
+      ]
+    },
+    {
+      name: "Otakukulture",
+      category: "apparel",
+      priority: "warm",
+      status: "Active",
+      desc: "Delhi-based D2C apparel startup designing anime streetwear, oversized shirts, and custom-embroidered hoodies for fans across India.",
+      outreach: "Visual apparel placements, embroidery reviews, and custom lookbook integrations.",
+      leadScore: "8.0 / 10",
+      googleRating: "4.4 ★ (30+ reviews)",
+      companySize: "~3-5 employees",
+      paidAds: "Yes (Meta and Instagram ads)",
+      followers: "15K followers",
+      products: "Anime streetwear, oversized shirts, and embroidered hoodies",
+      contacts: [
+        { label: "Business Email", value: "care@otakukulture.in" },
+        { label: "Instagram", value: "@otakukulture" },
+        { label: "Website", value: "otakukulture.in" }
+      ]
+    },
+    {
+      name: "Animecult",
+      category: "apparel",
+      priority: "try",
+      status: "Active",
+      desc: "Jaipur-based fashion label offering graphic oversized t-shirts, hoodies, and accessories focused on major anime series.",
+      outreach: "Visual sponsorships, clothing drops, and social media styling campaigns.",
+      leadScore: "7.8 / 10",
+      googleRating: "4.4 ★ (30+ reviews)",
+      companySize: "~3-5 employees",
+      paidAds: "Low (Organic and local outreach)",
+      followers: "8K followers",
+      products: "Graphic oversized t-shirts, hoodies, and anime clothing",
+      contacts: [
+        { label: "Business Email", value: "contact@animecult.in" },
+        { label: "Instagram", value: "@animecult" },
+        { label: "Website", value: "animecult.in" }
+      ]
     }
   ];
 
