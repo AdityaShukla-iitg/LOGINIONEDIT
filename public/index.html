@@ -52,6 +52,7 @@
       <div class="tab-bar">
         <button id="btn-projects" class="tab-button active">Project Tracker</button>
         <button id="btn-sponsors" class="tab-button">Sponsor Directory</button>
+        <button id="btn-shorts" class="tab-button">Shorts Ideas</button>
       </div>
       <div class="header-divider"></div>
     </header>
@@ -180,6 +181,35 @@
 
         <!-- Sponsors Detailed Section -->
         <div class="sponsors-details-list" id="sponsors-details-list">
+          <!-- Dynamically populated -->
+        </div>
+      </div>
+
+      <!-- Tab 3: Shorts Ideas Content -->
+      <div id="tab-content-shorts" class="hidden">
+        <div class="shorts-header-container">
+          <h2 class="shorts-title">Shorts Ideas</h2>
+          <p class="shorts-subtitle">Video concepts, scripts, and production blueprints ready for execution.</p>
+        </div>
+
+        <!-- Topics Table Wrapper -->
+        <div class="shorts-table-wrapper">
+          <table class="shorts-table" id="shorts-table">
+            <thead>
+              <tr>
+                <th style="width: 60px;">#</th>
+                <th>Topic / Title</th>
+                <th style="width: 150px; text-align: center;">Action</th>
+              </tr>
+            </thead>
+            <tbody id="shorts-table-body">
+              <!-- Dynamically populated -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Shorts Detailed List -->
+        <div class="shorts-details-list" id="shorts-details-list">
           <!-- Dynamically populated -->
         </div>
       </div>
