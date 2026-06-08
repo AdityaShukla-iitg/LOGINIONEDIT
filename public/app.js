@@ -380,6 +380,495 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  }
+
+  // ==========================================================================
+  // SPONSOR DIRECTORY DATASET & LOGIC
+  // ==========================================================================
+
+  const SPONSORS_DATA = [
+    {
+      name: "Xenpachi",
+      category: "apparel",
+      priority: "hot",
+      status: "Active",
+      desc: "Japanese streetwear aesthetics, bootstrapped from Jaipur. Anime-first identity, premium build quality, cult following. Already spending on ads. Perfect fit for passive wall placement on an anime channel.",
+      pitch: "A passive logo placement elevates Xenpachi's premium, scarcity-driven streetwear by establishing subtle, high-end brand recall among half a million dedicated otaku consumers without requiring aggressive content generation.",
+      outreach: "Premium Curator. Reaching discerning, high-intent collectors who possess disposable income for premium acquisitions. Avoids grueling Instagram content mill through passive placement.",
+      contacts: [
+        { label: "Email", value: "care@xenpachi.in" },
+        { label: "Email Alt", value: "care@xenpachi.com" },
+        { label: "Instagram", value: "@xenpachi.india" },
+        { label: "Founder Email", value: "vinodmittal@hotmail.com" },
+        { label: "Founder Details", value: "Nitin Sajwan, Vinod Mittal (Designated Partners)" },
+        { label: "Note", value: "Founder active on @xenpachi.uncensored (BTS account)" }
+      ],
+      tag: "14K IG · logo on wall, colour-matched bg · zero verbal risk"
+    },
+    {
+      name: "Harsido",
+      category: "apparel",
+      priority: "hot",
+      status: "Active",
+      desc: "Self-described 'leading anime merch brand in India.' Active drops, Cash on Delivery available, India-wide shipping. Actively growing Instagram presence.",
+      pitch: "Integrating Harsido's culturally relevant apparel directly into high-retention anime content drives immediate, high-trust conversion among trend-conscious viewers seeking everyday fandom wear.",
+      outreach: "Niche Apparel. Direct audience match for Animachar. Reaching trend-conscious viewers seeking everyday wear and responsive to YouTube integrations.",
+      contacts: [
+        { label: "Instagram", value: "@harsido" },
+        { label: "Website", value: "harsido.com" },
+        { label: "Note", value: "DM the Instagram directly - founder runs it personally (9.2K followers)" }
+      ],
+      tag: "9.2K IG · direct audience match · pilot-friendly budget"
+    },
+    {
+      name: "Anime Devta",
+      category: "apparel",
+      priority: "hot",
+      status: "Active",
+      desc: "India's first 'Indian Anime' merch brand blending Bharat culture with anime art. Jaipur based, co-founded by engineering and design students at UPES and incubated under the Runway program. Raised pre-incubation funding.",
+      pitch: "Aligning with a prominent Indian anime channel amplifies Anime Devta's youthful, 'phodu' brand narrative to a highly engaged demographic actively seeking affordable, localized merchandise.",
+      outreach: "Community-Driven Startup. Merges local culture and anime art. targets Tier-2/Tier-3 cities with affordable pricing, free shipping prepaid, and low COD fees.",
+      contacts: [
+        { label: "Email", value: "support@animedevta.com" },
+        { label: "Instagram", value: "@anime_devta" },
+        { label: "Founder", value: "Dev Taneja, Himangshu Goswami" },
+        { label: "Founder LinkedIn", value: "LinkedIn: Dev Taneja" },
+        { label: "Note", value: "Shark Tank India S3/S5 finalist. Co-founders are ex-anime YouTubers themselves." }
+      ],
+      tag: "22K IG · Shark Tank S3 finalist · ex-anime YouTuber founder"
+    },
+    {
+      name: "Weeboholic",
+      category: "apparel",
+      priority: "warm",
+      status: "Active",
+      desc: "Anime streetwear startup based in Zirakpur, Punjab. Focuses on specialized silhouettes including oversized anime jerseys and Hawaiian shirts.",
+      pitch: "Showcasing Weeboholic's signature oversized and Hawaiian anime shirts through passive placement captures the exact streetwear preferences and styling habits of the modern Indian anime fanbase.",
+      outreach: "Community-Driven Startup. Focuses on premium oversized jerseys and Hawaiian cuts, addressing the modern streetwear preferences of the anime community.",
+      contacts: [
+        { label: "Email", value: "info.weeboholic@gmail.com" },
+        { label: "Instagram", value: "@weeboholicofficial" },
+        { label: "Website", value: "weeboholic.com" },
+        { label: "Note", value: "DM Instagram - very small team, founder likely responds directly." }
+      ],
+      tag: "1.6K IG · hungry for visibility · mutual proof-of-concept"
+    },
+    {
+      name: "AnimeOryx",
+      category: "apparel",
+      priority: "warm",
+      status: "Active",
+      desc: "Bootstrapped anime apparel brand operating under 'Otaku's Trend' from Guna, Madhya Pradesh. Known for custom prints and material quality.",
+      pitch: "Promoting AnimeOryx's 250 GSM French terry apparel emphasizes premium product quality and highlights underrated fandoms to a discerning viewership that values material longevity.",
+      outreach: "Premium Materials. Uses 250 GSM French Terry Cotton. Targets underrated anime fandoms alongside mainstream titles to reach dedicated collectors.",
+      contacts: [
+        { label: "Email", value: "animeoryx.tee@gmail.com" },
+        { label: "Website", value: "animeoryx.in" },
+        { label: "Instagram", value: "Search @animeoryx on IG" },
+        { label: "Note", value: "Contact via website form (animeoryx.in) or direct email." }
+      ],
+      tag: "Premium 250GSM product · community-first brand · Rs 2K pilot fit"
+    },
+    {
+      name: "NerdyOtaku",
+      category: "apparel",
+      priority: "warm",
+      status: "Inactive (As D2C Merch)",
+      desc: "Originally ran nerdyotaku.in. Technical traces indicate the storefront is dormant/inactive. Active entity is a YouTube channel (28.7K subscribers) focusing on manga reader app tutorials (e.g. Mihon app).",
+      pitch: "N/A (Brand functions primarily as a digital content channel rather than a physical D2C merchandise brand).",
+      outreach: "Embroidery Niche. Incompatible with B2B merchandise sponsorships. Functions as a creator channel and software tutorial hub.",
+      contacts: [
+        { label: "Instagram", value: "@nerdyotaku.india" },
+        { label: "Note", value: "YouTube channel: Nerdy Otaku (28.7K subscribers) - tutorial hub." }
+      ],
+      tag: "Embroidery = visual wall art angle · 1.5K IG · niche premium"
+    },
+    {
+      name: "Bonkers Corner",
+      category: "apparel",
+      priority: "try",
+      status: "Active",
+      desc: "streetwear giant operating from Ulhasnagar, Maharashtra. Bootstrapped in 2020 by Shubham Gupta and Saniya Shaikh to a Rs 300 Crore valuation. Moat is fully vertically integrated in-house manufacturing, allowing fast collections drops.",
+      pitch: "Partnering with a channel boasting 500K subscribers reinforces Bonkers Corner's mainstream market dominance and cultural footprint within the competitive Gen-Z streetwear sector.",
+      outreach: "Mainstream Streetwear Giant. Maintaining absolute cultural dominance and top-of-mind recall among Gen-Z consumers. Relies on fast drops and massive scaling.",
+      contacts: [
+        { label: "Email", value: "info@bonkerscorner.com" },
+        { label: "Instagram", value: "@bonkerscorner" },
+        { label: "Founder", value: "Shubham Gupta (Founder and CEO)" },
+        { label: "Founder LinkedIn", value: "LinkedIn: Shubham Gupta" },
+        { label: "Note", value: "Appeared on Shark Tank India S5; secured Series A funding ($10.7M) from India SME Investments." }
+      ],
+      tag: "Rs 195 Cr revenue · Gen Z streetwear · aspirational pitch candidate"
+    },
+    {
+      name: "Displate",
+      category: "art",
+      priority: "hot",
+      status: "Active",
+      desc: "Seattle, WA based global brand specializing in magnet-mounted metal art posters. One of the top sponsors of anime content creators globally.",
+      pitch: "Promoting Displate's high-quality metal posters taps directly into the high-intent, premium collector mindset of a dedicated regional viewership, driving measurable performance marketing returns.",
+      outreach: "Performance Affiliate Engine. structured creator and affiliate programs (up to 25% commission) with dedicated creator support teams.",
+      contacts: [
+        { label: "Email", value: "support@displate-us.com" },
+        { label: "Website", value: "displate.com/creators" },
+        { label: "CEO", value: "Nicholas Holdcraft (CEO), Justin Vincent" },
+        { label: "Note", value: "Submit channel statistics through their creator application portal." }
+      ],
+      tag: "Top anime YT sponsor globally · creator portal direct apply"
+    },
+    {
+      name: "Indian Art Print Sellers",
+      category: "art",
+      priority: "hot",
+      status: "Unknown",
+      desc: "Independent artists selling anime art prints on Etsy or Instagram. Mostly solo founders selling prints for room decor.",
+      pitch: "N/A (Specific data for active accounts matching the exact criteria of 1K to 20K followers is not found publicly).",
+      outreach: "Visual Art. Easiest targets for low budget pilots. Fits naturally as background wall display items in creator studio videos.",
+      contacts: [
+        { label: "Instagram Search", value: 'Search "anime art prints India" on IG' },
+        { label: "Etsy Search", value: 'Search "anime wall art India" on Etsy' }
+      ],
+      tag: "Easiest yes · Rs 2K pilot sweet spot · 10+ candidates available",
+      replacement: {
+        title: "Replacement Suggestion",
+        desc: "Major pop-culture licensed retailers like The Souled Store or Bewakoof, offering established affiliate structures and marketing budgets."
+      }
+    },
+    {
+      name: "Posters.in / Posters Wala",
+      category: "art",
+      priority: "warm",
+      status: "Unknown",
+      desc: "Bootstrapped Indian print shops selling anime poster packages on Amazon India and social media.",
+      pitch: "Promoting high-quality anime posters directly appeals to viewers looking to decorate their spaces, leveraging the high visual presence of studio wall backdrops in creator videos.",
+      outreach: "Visual Wall Decor. Native to the format. Placing their printed products physically in the video background is a direct visual showcase.",
+      contacts: [
+        { label: "Instagram Search", value: 'Search "anime poster India brand" on IG' },
+        { label: "Amazon Search", value: 'Search "anime poster" on Amazon India to find seller profiles' }
+      ],
+      tag: "Passive wall art = native to the format · high visual synergy"
+    },
+    {
+      name: "Weebshop India",
+      category: "art",
+      priority: "try",
+      status: "Active",
+      desc: "Merchandise aggregator store based in Chennai. Offers wide catalog including figures, cosplay accessories, and prints. Founded by SP Praveen Raj.",
+      pitch: "A passive integration leverages Weebshop's grassroots 'by the weebs, for the weebs' ethos, building authentic trust and driving sales within an organically grown anime community.",
+      outreach: "Grassroots Merchandiser. Authentic community ties. Co-founder SP Praveen Raj also ran 'Anime Nadu', the first physical anime newspaper in India.",
+      contacts: [
+        { label: "Email", value: "support@weebshop.in" },
+        { label: "Website", value: "weebshop.in" },
+        { label: "Instagram", value: "@weebshopindia" },
+        { label: "Founder", value: "SP Praveen Raj (pvnstarlet), Yokesh Ananthakrishnan" }
+      ],
+      tag: "Multi-category · figures + prints = visual placement potential"
+    },
+    {
+      name: "Aitai Kuji",
+      category: "sub",
+      priority: "hot",
+      status: "Active",
+      desc: "Tokyo, Japan based e-commerce platform specializing in exclusive Japanese lottery goods (kuji), café items, and proxy orders. Founded by Audrey Lamsam.",
+      pitch: "Showcasing Aitai Kuji's exclusive Japanese lottery goods introduces a massive Indian audience to authentic, hard-to-find collector merchandise, acting as a trusted bridge for cross-border commerce.",
+      outreach: "Cross-Border Platform. Creator endorsement bridges trust and reassures local Indian buyers about international shipping times, custom duties, and logistics.",
+      contacts: [
+        { label: "Email", value: "contact@aitaikuji.com" },
+        { label: "Website", value: "aitaikuji.com" },
+        { label: "Founder", value: "Audrey Lamsam (Aitaikimochi)" },
+        { label: "Note", value: "Apply via creator partnerships form on website." }
+      ],
+      tag: "Built to sponsor anime YT creators · recurring budget model"
+    },
+    {
+      name: "Indian Manga Sub Box",
+      category: "sub",
+      priority: "warm",
+      status: "Unknown",
+      desc: "Recurring monthly manga box delivery model in India. Currently unverified or operating outside public digital footprints as of June 2026.",
+      pitch: "N/A (A verified, active Indian manga subscription box operating under this specific recurring model is not found publicly).",
+      outreach: "Subscription Box Niche. Recurring budget model has high value but requires direct replacements due to lack of local active operators.",
+      contacts: [
+        { label: "Instagram Search", value: 'Search "manga subscription India" on IG' }
+      ],
+      tag: "Monthly budget model · recurring deal potential · growing vertical",
+      replacement: {
+        title: "Replacement Suggestion",
+        desc: "MangaStore.in, an active e-commerce storefront that specializes in shipping high-value manga sets (e.g., One Piece, Demon Slayer box sets)."
+      }
+    },
+    {
+      name: "Right Stuf Anime",
+      category: "sub",
+      priority: "warm",
+      status: "Inactive (Shut Down)",
+      desc: "Historical retail giant co-founded by Shawne Kleckner. standalone brand shut down and fully migrated into Crunchyroll Store in October 2023.",
+      pitch: "N/A (Operations successfully folded into the Crunchyroll Store, resulting in the dissolution of the standalone brand identity).",
+      outreach: "Defunct Retail Giant. Standalone identity is dissolved. Replaced by active local or global alternatives.",
+      contacts: [
+        { label: "Former Founders", value: "Shawne Kleckner, Robert Todd Ferson" }
+      ],
+      tag: "Established creator program · ships India · worth applying",
+      replacement: {
+        title: "Replacement Suggestion",
+        desc: "ComicSense / DatteHameHa (comicsense.store, contact: care@comicsense.xyz, Sagar Agarwal), which operates at a high-volume mainstream level in India."
+      }
+    },
+    {
+      name: "Crunchyroll India",
+      category: "sub",
+      priority: "try",
+      status: "Active",
+      desc: "Sony Pictures Entertainment subsidiary driving subscription growth in India. running large celebrity campaigns (Rashmika Mandanna, Shubman Gill) and partnerships.",
+      pitch: "Strategic logo placement on a top-tier regional channel drives premium subscription conversions, lowers CAC, and solidifies Crunchyroll's market dominance in the rapidly expanding Indian sector.",
+      outreach: "Corporate Vanguard. Strategic partnership to acquire subscribers, reduce character acquisition costs, and normalize anime viewing locally.",
+      contacts: [
+        { label: "Partnerships", value: "Vikas Boni (Senior Director and India Lead for Global Distribution)" },
+        { label: "Marketing VP", value: "Akshat Sahu (VP GTM & Partnerships Marketing, APAC & MENA)" },
+        { label: "Note", value: "Reach out via professional LinkedIn networks to Boni and Sahu directly." }
+      ],
+      tag: "Reach out · passive format removes conflict-of-interest concern"
+    }
+  ];
+
+  // Tab switching logic
+  const btnProjects = document.getElementById('btn-projects');
+  const btnSponsors = document.getElementById('btn-sponsors');
+  const tabProjects = document.getElementById('tab-content-projects');
+  const tabSponsors = document.getElementById('tab-content-sponsors');
+
+  if (btnProjects && btnSponsors && tabProjects && tabSponsors) {
+    btnProjects.addEventListener('click', () => {
+      btnProjects.classList.add('active');
+      btnSponsors.classList.remove('active');
+      tabProjects.classList.remove('hidden');
+      tabSponsors.classList.add('hidden');
+    });
+
+    btnSponsors.addEventListener('click', () => {
+      btnSponsors.classList.add('active');
+      btnProjects.classList.remove('active');
+      tabSponsors.classList.remove('hidden');
+      tabProjects.classList.add('hidden');
+      renderSponsors();
+    });
+  }
+
+  // Render function
+  const sponsorsGrid = document.getElementById('sponsors-grid');
+  const sponsorSearch = document.getElementById('sponsor-search');
+  const filterBtns = document.querySelectorAll('.filter-btn');
+
+  let currentCategory = 'all';
+
+  function renderSponsors() {
+    if (!sponsorsGrid) return;
+    sponsorsGrid.innerHTML = '';
+
+    const query = sponsorSearch ? sponsorSearch.value.trim().toLowerCase() : '';
+
+    const filtered = SPONSORS_DATA.filter(item => {
+      const matchesCat = (currentCategory === 'all' || item.category === currentCategory);
+      
+      let matchesSearch = true;
+      if (query) {
+        const nameMatch = item.name.toLowerCase().includes(query);
+        const descMatch = item.desc.toLowerCase().includes(query);
+        const outreachMatch = item.outreach.toLowerCase().includes(query);
+        const pitchMatch = item.pitch.toLowerCase().includes(query);
+        
+        let contactsMatch = false;
+        for (const c of item.contacts) {
+          if (c.value.toLowerCase().includes(query) || c.label.toLowerCase().includes(query)) {
+            contactsMatch = true;
+            break;
+          }
+        }
+        matchesSearch = nameMatch || descMatch || outreachMatch || pitchMatch || contactsMatch;
+      }
+
+      return matchesCat && matchesSearch;
+    });
+
+    filtered.forEach(item => {
+      const card = document.createElement('div');
+      card.className = 'sponsor-card';
+
+      // Top Row (Name, Category)
+      const topRow = document.createElement('div');
+      topRow.className = 'sponsor-card-top';
+
+      const titleEl = document.createElement('h3');
+      titleEl.className = 'sponsor-card-title';
+      titleEl.innerHTML = `<span class="priority-indicator priority-${item.priority}"></span>${item.name}`;
+
+      const catBadge = document.createElement('span');
+      catBadge.className = `category-badge cat-${item.category}`;
+      catBadge.textContent = item.category === 'art' ? 'Art & Prints' : (item.category === 'sub' ? 'Subscription' : 'Apparel');
+
+      topRow.appendChild(titleEl);
+      topRow.appendChild(catBadge);
+      card.appendChild(topRow);
+
+      // Description
+      const descEl = document.createElement('p');
+      descEl.className = 'sponsor-card-desc';
+      descEl.textContent = item.desc;
+      card.appendChild(descEl);
+
+      // Status
+      const statusEl = document.createElement('div');
+      statusEl.style.fontSize = '12px';
+      statusEl.style.color = 'var(--color-text-muted)';
+      const isAct = item.status.includes('Active');
+      statusEl.innerHTML = `Status: <span style="font-weight:600; color:${isAct ? 'var(--color-royal-green)' : 'var(--color-primary-red)'}">${item.status}</span>`;
+      card.appendChild(statusEl);
+
+      // Strategic Outreach Rationale
+      const outreachSection = document.createElement('div');
+      outreachSection.className = 'sponsor-outreach-section';
+      
+      const outreachHeader = document.createElement('div');
+      outreachHeader.className = 'outreach-header';
+      outreachHeader.textContent = 'Why Reach Out';
+      
+      const outreachReason = document.createElement('div');
+      outreachReason.className = 'outreach-reason';
+      outreachReason.textContent = item.outreach;
+
+      outreachSection.appendChild(outreachHeader);
+      outreachSection.appendChild(outreachReason);
+      card.appendChild(outreachSection);
+
+      // Pitch Section with Copy Button
+      if (item.pitch && item.pitch !== 'N/A') {
+        const pitchSection = document.createElement('div');
+        pitchSection.className = 'sponsor-outreach-section';
+        pitchSection.style.borderLeftColor = '#EF9F27';
+
+        const pitchHeader = document.createElement('div');
+        pitchHeader.className = 'pitch-header';
+        pitchHeader.innerHTML = `<span>Suggested Pitch Angle</span>`;
+
+        const copyPitchBtn = document.createElement('button');
+        copyPitchBtn.className = 'copy-btn';
+        copyPitchBtn.innerHTML = `
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+          </svg>
+        `;
+        copyPitchBtn.addEventListener('click', () => {
+          copyText(item.pitch, copyPitchBtn);
+        });
+        pitchHeader.appendChild(copyPitchBtn);
+
+        const pitchContent = document.createElement('div');
+        pitchContent.className = 'pitch-content';
+        pitchContent.textContent = item.pitch;
+
+        pitchSection.appendChild(pitchHeader);
+        pitchSection.appendChild(pitchContent);
+        card.appendChild(pitchSection);
+      }
+
+      // Replacement details if any
+      if (item.replacement) {
+        const replacementNotice = document.createElement('div');
+        replacementNotice.className = 'replacement-notice';
+        
+        const replacementTitle = document.createElement('div');
+        replacementTitle.className = 'replacement-title';
+        replacementTitle.textContent = item.replacement.title;
+
+        const replacementDesc = document.createElement('div');
+        replacementDesc.textContent = item.replacement.desc;
+
+        replacementNotice.appendChild(replacementTitle);
+        replacementNotice.appendChild(replacementDesc);
+        card.appendChild(replacementNotice);
+      }
+
+      // Contact list with individual copy buttons
+      const contactList = document.createElement('div');
+      contactList.className = 'sponsor-contact-list';
+
+      const contactLabel = document.createElement('div');
+      contactLabel.className = 'contact-label';
+      contactLabel.textContent = 'Contacts';
+      contactList.appendChild(contactLabel);
+
+      item.contacts.forEach(c => {
+        const row = document.createElement('div');
+        row.className = 'contact-item-row';
+
+        const detail = document.createElement('div');
+        detail.className = 'contact-item-detail';
+
+        const labelSpan = document.createElement('span');
+        labelSpan.className = 'contact-item-label';
+        labelSpan.textContent = c.label;
+
+        const valSpan = document.createElement('span');
+        valSpan.className = 'contact-item-value';
+        valSpan.textContent = c.value;
+
+        detail.appendChild(labelSpan);
+        detail.appendChild(valSpan);
+        row.appendChild(detail);
+
+        // Copy button if not a placeholder
+        const cleanVal = c.value.toLowerCase();
+        if (cleanVal !== 'not found publicly' && !cleanVal.includes('search') && !cleanVal.includes('contact via')) {
+          const btn = document.createElement('button');
+          btn.className = 'copy-btn';
+          btn.innerHTML = `
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+              <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+            </svg>
+          `;
+          btn.addEventListener('click', () => {
+            copyText(c.value, btn);
+          });
+          row.appendChild(btn);
+        }
+
+        contactList.appendChild(row);
+      });
+
+      card.appendChild(contactList);
+      sponsorsGrid.appendChild(card);
+    });
+  }
+
+  // Copy Clipboard Helper
+  function copyText(text, btn) {
+    navigator.clipboard.writeText(text).then(() => {
+      btn.classList.add('copied');
+      setTimeout(() => {
+        btn.classList.remove('copied');
+      }, 1500);
+    }).catch(err => {
+      console.error('Failed to copy: ', err);
+    });
+  }
+
+  // Search input listeners
+  if (sponsorSearch) {
+    sponsorSearch.addEventListener('input', renderSponsors);
+  }
+
+  // Filter button listeners
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentCategory = btn.getAttribute('data-filter');
+      renderSponsors();
+    });
+  });
+
   // Disable right-click context menu to prevent inspecting
   document.addEventListener('contextmenu', (e) => {
     e.preventDefault();

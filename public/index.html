@@ -49,19 +49,26 @@
           Shorts ₹300 · &lt;20 min ₹750 · &gt;20 min ₹1000
         </div>
       </div>
+      <div class="tab-bar">
+        <button id="btn-projects" class="tab-button active">Project Tracker</button>
+        <button id="btn-sponsors" class="tab-button">Sponsor Directory</button>
+      </div>
       <div class="header-divider"></div>
     </header>
 
-    <!-- Section 1: Hero Section -->
-    <section class="hero-section">
-      <div class="hero-content">
-        <h2 class="hero-title">Internship by Loginion</h2>
-        <p class="hero-subtitle">Video editing portfolio, delivery portal, and project tracker.</p>
-      </div>
-    </section>
-
-    <!-- Section 2: Project Tracker -->
+    <!-- Section 2: Dashboard Main Content -->
     <main class="dashboard-content">
+      
+      <!-- Tab 1: Project Tracker Content -->
+      <div id="tab-content-projects">
+        <!-- Section 1: Hero Section -->
+        <section class="hero-section">
+          <div class="hero-content">
+            <h2 class="hero-title">Internship by Loginion</h2>
+            <p class="hero-subtitle">Video editing portfolio, delivery portal, and project tracker.</p>
+          </div>
+        </section>
+
       <!-- Loading State -->
       <div id="loading-state" class="state-message">
         Loading projects...
@@ -125,7 +132,28 @@
         <!-- Project Cards (Mobile) -->
         <section class="cards-container" id="cards-container">
           <!-- Dynamically populated -->
-        </section>
+      </div> <!-- Close tab-content-projects -->
+
+      <!-- Tab 2: Sponsor Directory Content -->
+      <div id="tab-content-sponsors" class="hidden">
+        <div class="sponsors-header-container">
+          <h2 class="sponsors-title">Sponsor Directory</h2>
+          <p class="sponsors-subtitle">15 anime-adjacent D2C brands to pitch for Animachar visual sponsorship placement (June 2026)</p>
+        </div>
+        
+        <div class="sponsors-toolbar">
+          <input type="text" id="sponsor-search" placeholder="Search brands, contacts, or rationale..." />
+          <div class="sponsor-filters">
+            <button class="filter-btn active" data-filter="all">All (15)</button>
+            <button class="filter-btn" data-filter="apparel">Apparel (7)</button>
+            <button class="filter-btn" data-filter="art">Art & Prints (4)</button>
+            <button class="filter-btn" data-filter="sub">Subscription (4)</button>
+          </div>
+        </div>
+
+        <div class="sponsors-grid" id="sponsors-grid">
+          <!-- Dynamically populated -->
+        </div>
       </div>
     </main>
 
