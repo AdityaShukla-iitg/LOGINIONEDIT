@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aditya Shukla - Shorts Ideas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=2">
+  <script>
+    // Security check - redirect to index.html if not logged in
+    if (!sessionStorage.getItem('ACCESS_PASSWORD')) {
+      window.location.href = 'index.html';
+    }
+  </script>
+</head>
+<body>
+
+  <div class="page-container">
+    <!-- Sticky Header -->
+    <header class="sticky-header">
+      <div class="header-content">
+        <div class="header-left">
+          <span class="header-name">Aditya Shukla x Loginion</span>
+          <span class="header-title">Video Editor</span>
+        </div>
+        <div class="header-right">
+          Shorts ₹300 · &lt;20 min ₹750 · &gt;20 min ₹1000
+        </div>
+      </div>
+      <div class="tab-bar">
+        <a href="index.html" class="tab-button" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">Dashboard</a>
+        <a href="shorts.html" class="tab-button active" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">Shorts Ideas</a>
+      </div>
+      <div class="header-divider"></div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="dashboard-content">
+      <div class="shorts-container">
+        <div class="shorts-header-container">
+          <h2 class="shorts-title">Shorts Ideas</h2>
+          <p class="shorts-subtitle">Video concepts, scripts, and production blueprints ready for execution.</p>
+        </div>
+
+        <!-- Topics Table Wrapper -->
+        <div class="shorts-table-wrapper">
+          <table class="shorts-table" id="shorts-table">
+            <thead>
+              <tr>
+                <th style="width: 60px;">#</th>
+                <th>Topic / Title</th>
+                <th style="width: 150px; text-align: center;">Action</th>
+              </tr>
+            </thead>
+            <tbody id="shorts-table-body">
+              <!-- Dynamically populated -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Shorts Detailed List -->
+        <div class="shorts-details-list" id="shorts-details-list">
+          <!-- Dynamically populated -->
+        </div>
+      </div>
+    </main>
+
+    <!-- Contacts Footer -->
+    <footer class="contacts-footer">
+      <div class="footer-content">
+        <h3 class="footer-title">Contacts</h3>
+        <div class="contacts-list">
+          <a href="mailto:adityashukla.available@gmail.com" class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+            </svg>
+            <span>adityashukla.available@gmail.com</span>
+          </a>
+          <a href="https://wa.me/917018284268" target="_blank" rel="noopener noreferrer" class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <span>WhatsApp: 7018284268</span>
+          </a>
+          <a href="https://fluxio.live" target="_blank" rel="noopener noreferrer" class="contact-item website-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+              <path d="M2 12h20"></path>
+            </svg>
+            <span>fluxio.live</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="shorts.js"></script>
+</body>
+</html>
