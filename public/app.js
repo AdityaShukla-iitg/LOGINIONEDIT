@@ -396,7 +396,6 @@ document.addEventListener('DOMContentLoaded', () => {
       googleRating: "4.4 ★ (4,500+ reviews)",
       companySize: "~500-1,000 employees",
       paidAds: "Yes (Meta, Google, YouTube)",
-      followers: "1.4M followers",
       products: "Licensed anime clothing, bags, accessories, and shoes",
       contacts: [
         { label: "Partnership Email", value: "connect@thesouledstore.com" },
@@ -418,7 +417,6 @@ document.addEventListener('DOMContentLoaded', () => {
       googleRating: "4.5 ★ (650+ reviews)",
       companySize: "~100-200 employees",
       paidAds: "Yes (Meta, Instagram)",
-      followers: "520K followers",
       products: "Oversized anime streetwear, hoodies, t-shirts, sweatpants, and drops",
       contacts: [
         { label: "Business Email", value: "business@bonkerscorner.com" },
@@ -439,7 +437,6 @@ document.addEventListener('DOMContentLoaded', () => {
       googleRating: "4.2 ★ (1,200+ reviews)",
       companySize: "~500-1,000 employees",
       paidAds: "Yes (Meta, Google Performance Max, YouTube)",
-      followers: "1.7M followers",
       products: "Pop-culture graphic clothing, hoodies, notebooks, and mobile covers",
       contacts: [
         { label: "Partnership Email", value: "care@bewakoof.com" },
@@ -459,7 +456,6 @@ document.addEventListener('DOMContentLoaded', () => {
       googleRating: "4.4 ★ (150+ reviews)",
       companySize: "~50-100 employees",
       paidAds: "Yes (Meta, Google Ads)",
-      followers: "155K followers",
       products: "Event tickets, sponsorships, booth rentals, and merchandise",
       contacts: [
         { label: "Business Email", value: "info@comicconindia.com" },
@@ -480,7 +476,6 @@ document.addEventListener('DOMContentLoaded', () => {
       googleRating: "4.3 ★ (3,000+ reviews)",
       companySize: "~20-50 employees",
       paidAds: "Yes (Google Local Map ads, Facebook Retargeting)",
-      followers: "25K followers",
       products: "Authentic anime figures (Bandai, Banpresto), manga, keychains, and licensed clothing",
       contacts: [
         { label: "Founder Email", value: "satish@entertainmentstore.in" },
@@ -501,7 +496,6 @@ document.addEventListener('DOMContentLoaded', () => {
       googleRating: "4.4 ★ (120+ reviews)",
       companySize: "~10-30 employees",
       paidAds: "Yes (Meta Ads, Creator Sponsorships)",
-      followers: "180K followers",
       products: "Anime graphic tees, hoodies, katanas, and accessories",
       contacts: [
         { label: "Partnership Email", value: "care@comicsense.xyz" },
@@ -522,7 +516,6 @@ document.addEventListener('DOMContentLoaded', () => {
       googleRating: "4.6 ★ (50+ reviews)",
       companySize: "~5-15 employees",
       paidAds: "Yes (Meta Ads, YouTube integrations)",
-      followers: "42K followers",
       products: "High GSM custom-fit anime hoodies, shirts, and streetwear designs",
       contacts: [
         { label: "Founder Direct Email", value: "vinodmittal@hotmail.com" },
@@ -544,12 +537,11 @@ document.addEventListener('DOMContentLoaded', () => {
       googleRating: "4.8 ★ (185+ reviews)",
       companySize: "~5-10 employees",
       paidAds: "Low (Local organic social promotions)",
-      followers: "5.2K followers",
       products: "Cosplay swords/katanas, anime figures, and collectible accessories",
       contacts: [
         { label: "Business Email", value: "info.baakastore@gmail.com" },
-        { label: "Instagram", value: "@BakaStoreOffl" },
-        { label: "Website", value: "bakastore.in" },
+        { label: "Instagram", value: "@ba_ka_store" },
+        { label: "Website", value: "baakastore.com" },
         { label: "Tip", value: "They offer shipping across India and often coordinate with local promoters via email or Instagram DM." }
       ]
     },
@@ -564,7 +556,6 @@ document.addEventListener('DOMContentLoaded', () => {
       googleRating: "4.4 ★ (200+ reviews)",
       companySize: "~5-10 employees",
       paidAds: "Low (Search ads, influencer reviews)",
-      followers: "11K followers",
       products: "Authentic import action figures, keychains, and pop culture accessories",
       contacts: [
         { label: "Business Email", value: "sales@nerdarena.in" },
@@ -584,7 +575,6 @@ document.addEventListener('DOMContentLoaded', () => {
       googleRating: "4.3 ★ (2,500+ reviews)",
       companySize: "~50-100 employees",
       paidAds: "Yes (Meta Ads, Google Search)",
-      followers: "100K followers",
       products: "Anime phone cases, laptop skins, audio gear, and pop-culture apparel",
       contacts: [
         { label: "Business Email", value: "cs@macmerise.com" },
@@ -604,7 +594,6 @@ document.addEventListener('DOMContentLoaded', () => {
       googleRating: "4.6 ★ (150+ reviews)",
       companySize: "~5-15 employees",
       paidAds: "Yes (Local search and social ads)",
-      followers: "20K followers",
       products: "Licensed comics, manga, figures, and pop-culture apparel",
       contacts: [
         { label: "Business Email", value: "contact@thecomicbookstore.in" },
@@ -623,7 +612,6 @@ document.addEventListener('DOMContentLoaded', () => {
       googleRating: "4.2 ★ (Trustpilot reviews)",
       companySize: "~10-30 employees",
       paidAds: "Yes (Aggressive Meta Ads)",
-      followers: "80K followers",
       products: "Oversized anime graphic tees, hoodies, and streetwear",
       contacts: [
         { label: "Business Email", value: "support@pronk.in" },
@@ -642,7 +630,6 @@ document.addEventListener('DOMContentLoaded', () => {
       googleRating: "4.3 ★ (50+ reviews)",
       companySize: "~5-10 employees",
       paidAds: "Yes (Local Meta promotions)",
-      followers: "15K followers",
       products: "Premium cotton anime streetwear and graphic tees",
       contacts: [
         { label: "Business Email", value: "care@zamsfashion.in" },
@@ -661,50 +648,11 @@ document.addEventListener('DOMContentLoaded', () => {
       googleRating: "4.5 ★ (50+ reviews)",
       companySize: "~5-10 employees",
       paidAds: "Low (Organic community building)",
-      followers: "8K followers",
       products: "Action figures, katanas, posters, and anime accessories",
       contacts: [
         { label: "Business Email", value: "info@customclans.in" },
         { label: "Instagram", value: "@customclans" },
         { label: "Website", value: "customclans.com" }
-      ]
-    },
-    {
-      name: "AnimeVerseStore",
-      category: "apparel",
-      priority: "warm",
-      status: "Active",
-      desc: "New Delhi-based e-commerce store focusing on aesthetic anime drops, graphic t-shirts, and rare collectibles from popular franchises like Naruto and JJK.",
-      outreach: "Visual mid-roll ads, apparel gifting, and affiliate discount promotions for anime review creators.",
-      leadScore: "8.0 / 10",
-      googleRating: "4.4 ★ (30+ reviews)",
-      companySize: "~3-5 employees",
-      paidAds: "Yes (Social media ads)",
-      followers: "12K followers",
-      products: "Aesthetic anime clothing, keychains, and accessories",
-      contacts: [
-        { label: "Business Email", value: "theanimeversestore@gmail.com" },
-        { label: "Instagram", value: "@theanimeversestore" },
-        { label: "Website", value: "animeversestore.in" }
-      ]
-    },
-    {
-      name: "Animemart",
-      category: "apparel",
-      priority: "warm",
-      status: "Active",
-      desc: "Pune-based D2C online store specializing in anime fashion, cozy hoodies, and custom graphic apparel for otaku audiences.",
-      outreach: "Gifting campaigns, clothing review vlogs, and custom lookbooks. Highly responsive to gaming and lifestyle vloggers.",
-      leadScore: "8.0 / 10",
-      googleRating: "4.5 ★ (50+ reviews)",
-      companySize: "~3-8 employees",
-      paidAds: "Yes (Periodic Meta promotions)",
-      followers: "12K followers",
-      products: "Otaku hoodies, graphic tees, and accessories",
-      contacts: [
-        { label: "Business Email", value: "hello@animemart.in" },
-        { label: "Instagram", value: "@animemart" },
-        { label: "Website", value: "animemart.in" }
       ]
     },
     {
@@ -718,7 +666,6 @@ document.addEventListener('DOMContentLoaded', () => {
       googleRating: "4.5 ★ (40+ reviews)",
       companySize: "~2-5 employees",
       paidAds: "Yes (Pinterest and Meta ads)",
-      followers: "10K followers",
       products: "Cute keychains, mousepads, plushies, and otaku decor",
       contacts: [
         { label: "Business Email", value: "tanejs01@gmail.com" },
@@ -737,7 +684,6 @@ document.addEventListener('DOMContentLoaded', () => {
       googleRating: "4.4 ★ (30+ reviews)",
       companySize: "~3-5 employees",
       paidAds: "Yes (Meta and Instagram ads)",
-      followers: "15K followers",
       products: "Anime streetwear, oversized shirts, and embroidered hoodies",
       contacts: [
         { label: "Business Email", value: "care@otakukulture.in" },
@@ -756,7 +702,6 @@ document.addEventListener('DOMContentLoaded', () => {
       googleRating: "4.4 ★ (30+ reviews)",
       companySize: "~3-5 employees",
       paidAds: "Low (Organic and local outreach)",
-      followers: "8K followers",
       products: "Graphic oversized t-shirts, hoodies, and anime clothing",
       contacts: [
         { label: "Business Email", value: "contact@animecult.in" },
@@ -775,7 +720,6 @@ document.addEventListener('DOMContentLoaded', () => {
       googleRating: "4.5 ★ (500+ reviews)",
       companySize: "~20-50 employees",
       paidAds: "Yes (Meta Ads, Google Search)",
-      followers: "98K followers",
       products: "Anime t-shirts, oversized hoodies, badges, and stickers",
       contacts: [
         { label: "Business Email", value: "contact@redwolf.in" },
@@ -794,7 +738,6 @@ document.addEventListener('DOMContentLoaded', () => {
       googleRating: "4.6 ★ (80+ reviews)",
       companySize: "~5-15 employees",
       paidAds: "Yes (Meta Ads)",
-      followers: "15K followers",
       products: "Anime action figures, statues, keychains, and geek collectibles",
       contacts: [
         { label: "Business Email", value: "support@otakuisland.in" },
@@ -813,7 +756,6 @@ document.addEventListener('DOMContentLoaded', () => {
       googleRating: "4.4 ★ (30+ reviews)",
       companySize: "~3-8 employees",
       paidAds: "Yes (Instagram Promotions)",
-      followers: "18K followers",
       products: "Premium embroidered anime hoodies, sweatshirts, and graphic tees",
       contacts: [
         { label: "Business Email", value: "info@otakustitch.com" },
@@ -832,7 +774,6 @@ document.addEventListener('DOMContentLoaded', () => {
       googleRating: "4.5 ★ (250+ reviews)",
       companySize: "~10-25 employees",
       paidAds: "Yes (Google and Meta Ads)",
-      followers: "32K followers",
       products: "Anime night lights, coffee mugs, action figures, and quirky desk decor",
       contacts: [
         { label: "Business Email", value: "help@geekmonkey.in" },
@@ -851,7 +792,6 @@ document.addEventListener('DOMContentLoaded', () => {
       googleRating: "4.3 ★ (1,500+ reviews)",
       companySize: "~200-500 employees",
       paidAds: "Yes (Meta, Google, and Print Ads)",
-      followers: "140K followers",
       products: "Licensed anime shirts, jackets, caps, and casual wear",
       contacts: [
         { label: "Business Email", value: "customercare@celio.com" },
@@ -870,7 +810,6 @@ document.addEventListener('DOMContentLoaded', () => {
       googleRating: "4.4 ★ (1,200+ reviews)",
       companySize: "~50-100 employees",
       paidAds: "Yes (Google Search and Shopping Ads)",
-      followers: "45K followers",
       products: "Manga books, light novels, comic volumes, and box sets",
       contacts: [
         { label: "Business Email", value: "customerservice@bookswagon.com" },
@@ -889,69 +828,11 @@ document.addEventListener('DOMContentLoaded', () => {
       googleRating: "4.5 ★ (3,500+ reviews)",
       companySize: "~200-500 employees",
       paidAds: "Yes (Local Search and Social Media)",
-      followers: "92K followers",
       products: "Manga volumes, pop-culture novels, collectibles, and stationery",
       contacts: [
         { label: "Business Email", value: "contactus@crossword.in" },
         { label: "Instagram", value: "@crosswordbookstores" },
         { label: "Website", value: "crossword.in" }
-      ]
-    },
-    {
-      name: "Apkastore",
-      category: "apparel",
-      priority: "try",
-      status: "Active",
-      desc: "Uttam Nagar based wholesale supplier of anime figurines, accessories, and geek toys. Caters directly to resellers and retail shops across India.",
-      outreach: "Wholesale sourcing guides and reseller review videos. Suitable for affiliate code partnerships and retail store reviews.",
-      leadScore: "7.5 / 10",
-      googleRating: "4.2 ★ (30+ reviews)",
-      companySize: "~5-10 employees",
-      paidAds: "Low (Organic WhatsApp marketing)",
-      followers: "10K followers",
-      products: "Anime keychains, action figures, phone charms, and posters",
-      contacts: [
-        { label: "Business Email", value: "support@apkastore.in" },
-        { label: "Instagram", value: "@apkastore.in" },
-        { label: "Website", value: "apkastore.in" }
-      ]
-    },
-    {
-      name: "Kawaii Store India",
-      category: "sub",
-      priority: "try",
-      status: "Active",
-      desc: "Aesthetic e-commerce store focusing on cute stationery, anime-adjacent accessories, and desktop organizers for Gen-Z students and creators.",
-      outreach: "Aesthetic desk setup unboxing videos and cute stationery haul reels. Good for affiliate promotions.",
-      leadScore: "7.8 / 10",
-      googleRating: "4.5 ★ (40+ reviews)",
-      companySize: "~2-5 employees",
-      paidAds: "Yes (Meta Ads)",
-      followers: "24K followers",
-      products: "Kawaii stationery, anime accessories, sticky notes, and desk organizers",
-      contacts: [
-        { label: "Business Email", value: "Support@kawaiistore.in" },
-        { label: "Instagram", value: "@kawaiistore.in" },
-        { label: "Website", value: "kawaiistore.in" }
-      ]
-    },
-    {
-      name: "Comics India",
-      category: "sub",
-      priority: "try",
-      status: "Active",
-      desc: "Specialized publisher and online seller of classic Indian comics, translated mangas, and vintage collectible graphic novels.",
-      outreach: "Nostalgia-focused content, comic book reviews, and publisher interview vlogs. Offers customized sponsorship spots.",
-      leadScore: "7.6 / 10",
-      googleRating: "4.4 ★ (30+ reviews)",
-      companySize: "~3-8 employees",
-      paidAds: "Low (Organic forum promotions)",
-      followers: "5K followers",
-      products: "Classic comics, translated mangas, and vintage graphic novels",
-      contacts: [
-        { label: "Business Email", value: "comicsindia2020@gmail.com" },
-        { label: "Instagram", value: "@comicsindia.co.in" },
-        { label: "Website", value: "comicsindia.co.in" }
       ]
     }
   ];
@@ -1107,14 +988,13 @@ document.addEventListener('DOMContentLoaded', () => {
       aboutEl.textContent = item.desc;
       detailBlock.appendChild(aboutEl);
 
-      // Render Metadata Grid (Lead Score, Google Rating, Instagram Size, Company Size, Paid Ads, Primary Products)
+      // Render Metadata Grid (Lead Score, Google Rating, Company Size, Paid Ads, Primary Products)
       const metaGrid = document.createElement('div');
       metaGrid.className = 'sponsor-metadata-grid';
 
       const fields = [
         { label: 'Lead Score', value: item.leadScore },
         { label: 'Google Rating', value: item.googleRating },
-        { label: 'Instagram Size', value: item.followers },
         { label: 'Company Size', value: item.companySize },
         { label: 'Paid Ads Status', value: item.paidAds },
         { label: 'Primary Products', value: item.products }
