@@ -709,7 +709,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     {
       name: "Kawaii Kingdom",
-      category: "apparel",
+      category: "sub",
       priority: "warm",
       status: "Active",
       desc: "Delhi-based e-commerce platform offering cute anime, gaming, and pop-culture themed keychains, mousepads, plushies, and decor.",
@@ -762,6 +762,196 @@ document.addEventListener('DOMContentLoaded', () => {
         { label: "Business Email", value: "contact@animecult.in" },
         { label: "Instagram", value: "@animecult" },
         { label: "Website", value: "animecult.in" }
+      ]
+    },
+    {
+      name: "Redwolf",
+      category: "apparel",
+      priority: "hot",
+      status: "Active",
+      desc: "Prominent indie pop-culture and custom-design streetwear brand in India. Offers graphic tees, hoodies, and accessories featuring official anime and gaming designs.",
+      outreach: "Highly suited for direct sponsorships and creator lookbooks. They regularly run campaigns and collaborate with fashion or lifestyle creators.",
+      leadScore: "9.0 / 10",
+      googleRating: "4.5 ★ (500+ reviews)",
+      companySize: "~20-50 employees",
+      paidAds: "Yes (Meta Ads, Google Search)",
+      followers: "98K followers",
+      products: "Anime t-shirts, oversized hoodies, badges, and stickers",
+      contacts: [
+        { label: "Business Email", value: "contact@redwolf.in" },
+        { label: "Instagram", value: "@redwolfindia" },
+        { label: "Website", value: "redwolf.in" }
+      ]
+    },
+    {
+      name: "Otaku Island",
+      category: "apparel",
+      priority: "warm",
+      status: "Active",
+      desc: "Chennai-based online retail store specializing in anime action figures, statues, and collectibles. Provides authentic imported products to the growing Indian anime community.",
+      outreach: "Ideal sponsor for unboxing videos, figure reviews, and desk setup build videos. Reaches targeted anime collectors.",
+      leadScore: "8.4 / 10",
+      googleRating: "4.6 ★ (80+ reviews)",
+      companySize: "~5-15 employees",
+      paidAds: "Yes (Meta Ads)",
+      followers: "15K followers",
+      products: "Anime action figures, statues, keychains, and geek collectibles",
+      contacts: [
+        { label: "Business Email", value: "support@otakuisland.in" },
+        { label: "Instagram", value: "@otakuisland.in" },
+        { label: "Website", value: "otakuisland.in" }
+      ]
+    },
+    {
+      name: "Otaku Stitch",
+      category: "apparel",
+      priority: "warm",
+      status: "Active",
+      desc: "Specialty designer brand focusing on custom-embroidered anime apparel. Brings premium embroidered hoodies and aesthetic streetwear to Indian anime fans.",
+      outreach: "Excellent for aesthetic styling reels and custom drop reviews. Very active in sending merchandise gifts to otaku creators.",
+      leadScore: "8.2 / 10",
+      googleRating: "4.4 ★ (30+ reviews)",
+      companySize: "~3-8 employees",
+      paidAds: "Yes (Instagram Promotions)",
+      followers: "18K followers",
+      products: "Premium embroidered anime hoodies, sweatshirts, and graphic tees",
+      contacts: [
+        { label: "Business Email", value: "info@otakustitch.com" },
+        { label: "Instagram", value: "@otaku.stitch.india" },
+        { label: "Website", value: "otakustitch.com" }
+      ]
+    },
+    {
+      name: "Geekmonkey",
+      category: "sub",
+      priority: "warm",
+      status: "Active",
+      desc: "Popular online portal for quirky gifts, novelty products, and gaming accessories in India. Carries a dedicated line of anime lamps, mugs, and action figures.",
+      outreach: "Great for gift guides, lifestyle vlogs, and unboxing content. Highly responsive to gaming and pop-culture channels.",
+      leadScore: "8.3 / 10",
+      googleRating: "4.5 ★ (250+ reviews)",
+      companySize: "~10-25 employees",
+      paidAds: "Yes (Google and Meta Ads)",
+      followers: "32K followers",
+      products: "Anime night lights, coffee mugs, action figures, and quirky desk decor",
+      contacts: [
+        { label: "Business Email", value: "help@geekmonkey.in" },
+        { label: "Instagram", value: "@geekmonkey.in" },
+        { label: "Website", value: "geekmonkey.in" }
+      ]
+    },
+    {
+      name: "Celio India",
+      category: "apparel",
+      priority: "hot",
+      status: "Active",
+      desc: "French menswear brand with a massive presence in India, known for their premium licensed anime drops (including Naruto, Dragon Ball, and Demon Slayer collections).",
+      outreach: "High-value styling campaigns and promotional lookbook sponsorships. Best targeted via their local agency partners or direct marketing team.",
+      leadScore: "9.2 / 10",
+      googleRating: "4.3 ★ (1,500+ reviews)",
+      companySize: "~200-500 employees",
+      paidAds: "Yes (Meta, Google, and Print Ads)",
+      followers: "140K followers",
+      products: "Licensed anime shirts, jackets, caps, and casual wear",
+      contacts: [
+        { label: "Business Email", value: "customercare@celio.com" },
+        { label: "Instagram", value: "@celioindia" },
+        { label: "Website", value: "celio.in" }
+      ]
+    },
+    {
+      name: "Bookswagon",
+      category: "sub",
+      priority: "warm",
+      status: "Active",
+      desc: "One of India's largest online bookstores, offering a massive selection of imported manga volumes, box sets, and light novels at competitive prices.",
+      outreach: "Ideal partner for manga reviews, recommendation videos, and book haul vlogs. Sponsoring exclusive reader discount codes.",
+      leadScore: "8.6 / 10",
+      googleRating: "4.4 ★ (1,200+ reviews)",
+      companySize: "~50-100 employees",
+      paidAds: "Yes (Google Search and Shopping Ads)",
+      followers: "45K followers",
+      products: "Manga books, light novels, comic volumes, and box sets",
+      contacts: [
+        { label: "Business Email", value: "customerservice@bookswagon.com" },
+        { label: "Instagram", value: "@bookswagon" },
+        { label: "Website", value: "bookswagon.com" }
+      ]
+    },
+    {
+      name: "Crossword",
+      category: "sub",
+      priority: "hot",
+      status: "Active",
+      desc: "Iconic bookstore chain in India with dozens of physical outlets. Offers a dedicated and rapidly expanding manga section alongside pop-culture graphic novels.",
+      outreach: "Store walkthroughs, manga section tours, and local event tie-ins. Best for lifestyle and book-focused creators.",
+      leadScore: "8.9 / 10",
+      googleRating: "4.5 ★ (3,500+ reviews)",
+      companySize: "~200-500 employees",
+      paidAds: "Yes (Local Search and Social Media)",
+      followers: "92K followers",
+      products: "Manga volumes, pop-culture novels, collectibles, and stationery",
+      contacts: [
+        { label: "Business Email", value: "contactus@crossword.in" },
+        { label: "Instagram", value: "@crosswordbookstores" },
+        { label: "Website", value: "crossword.in" }
+      ]
+    },
+    {
+      name: "Apkastore",
+      category: "apparel",
+      priority: "try",
+      status: "Active",
+      desc: "Uttam Nagar based wholesale supplier of anime figurines, accessories, and geek toys. Caters directly to resellers and retail shops across India.",
+      outreach: "Wholesale sourcing guides and reseller review videos. Suitable for affiliate code partnerships and retail store reviews.",
+      leadScore: "7.5 / 10",
+      googleRating: "4.2 ★ (30+ reviews)",
+      companySize: "~5-10 employees",
+      paidAds: "Low (Organic WhatsApp marketing)",
+      followers: "10K followers",
+      products: "Anime keychains, action figures, phone charms, and posters",
+      contacts: [
+        { label: "Business Email", value: "support@apkastore.in" },
+        { label: "Instagram", value: "@apkastore.in" },
+        { label: "Website", value: "apkastore.in" }
+      ]
+    },
+    {
+      name: "Kawaii Store India",
+      category: "sub",
+      priority: "try",
+      status: "Active",
+      desc: "Aesthetic e-commerce store focusing on cute stationery, anime-adjacent accessories, and desktop organizers for Gen-Z students and creators.",
+      outreach: "Aesthetic desk setup unboxing videos and cute stationery haul reels. Good for affiliate promotions.",
+      leadScore: "7.8 / 10",
+      googleRating: "4.5 ★ (40+ reviews)",
+      companySize: "~2-5 employees",
+      paidAds: "Yes (Meta Ads)",
+      followers: "24K followers",
+      products: "Kawaii stationery, anime accessories, sticky notes, and desk organizers",
+      contacts: [
+        { label: "Business Email", value: "Support@kawaiistore.in" },
+        { label: "Instagram", value: "@kawaiistore.in" },
+        { label: "Website", value: "kawaiistore.in" }
+      ]
+    },
+    {
+      name: "Comics India",
+      category: "sub",
+      priority: "try",
+      status: "Active",
+      desc: "Specialized publisher and online seller of classic Indian comics, translated mangas, and vintage collectible graphic novels.",
+      outreach: "Nostalgia-focused content, comic book reviews, and publisher interview vlogs. Offers customized sponsorship spots.",
+      leadScore: "7.6 / 10",
+      googleRating: "4.4 ★ (30+ reviews)",
+      companySize: "~3-8 employees",
+      paidAds: "Low (Organic forum promotions)",
+      followers: "5K followers",
+      products: "Classic comics, translated mangas, and vintage graphic novels",
+      contacts: [
+        { label: "Business Email", value: "comicsindia2020@gmail.com" },
+        { label: "Instagram", value: "@comicsindia.co.in" },
+        { label: "Website", value: "comicsindia.co.in" }
       ]
     }
   ];
@@ -888,20 +1078,9 @@ document.addEventListener('DOMContentLoaded', () => {
       const websiteObj = item.contacts.find(c => c.label.toLowerCase().includes('website'));
       const websiteVal = websiteObj ? websiteObj.value : 'Not found publicly';
 
-      const foundersObj = item.contacts.filter(c => c.label.toLowerCase().includes('founder') || c.label.toLowerCase().includes('ceo') || c.label.toLowerCase().includes('partners') || c.label.toLowerCase().includes('details'));
-      const foundersVal = foundersObj.map(f => f.value).join(', ') || '-';
-
       tr.appendChild(createCopyableCell(emailVal));
       tr.appendChild(createCopyableCell(instagramVal));
       tr.appendChild(createCopyableCell(websiteVal));
-
-      const tdFounders = document.createElement('td');
-      tdFounders.style.maxWidth = '200px';
-      tdFounders.style.overflow = 'hidden';
-      tdFounders.style.textOverflow = 'ellipsis';
-      tdFounders.style.whiteSpace = 'nowrap';
-      tdFounders.textContent = foundersVal;
-      tr.appendChild(tdFounders);
 
       sponsorTableBody.appendChild(tr);
 
