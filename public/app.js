@@ -1026,24 +1026,34 @@ NARRATION: Try these in your next video and watch your average view duration soa
   function updateScriptVisibility() {
     if (!shortsDetailsList) return;
     
-    if (toggleNarration && toggleNarration.checked) {
+    // Default narration to true if element is missing/null, visual/audio to false
+    const showNarration = toggleNarration ? toggleNarration.checked : true;
+    const showVisual = toggleVisual ? toggleVisual.checked : false;
+    const showAudio = toggleAudio ? toggleAudio.checked : false;
+
+    if (showNarration) {
       shortsDetailsList.classList.add('show-narration');
     } else {
       shortsDetailsList.classList.remove('show-narration');
     }
 
-    if (toggleVisual && toggleVisual.checked) {
+    if (showVisual) {
       shortsDetailsList.classList.add('show-visual');
     } else {
       shortsDetailsList.classList.remove('show-visual');
     }
 
-    if (toggleAudio && toggleAudio.checked) {
+    if (showAudio) {
       shortsDetailsList.classList.add('show-audio');
     } else {
       shortsDetailsList.classList.remove('show-audio');
     }
   }
+
+  // Force default checked values to override any browser form persistence cache
+  if (toggleNarration) toggleNarration.checked = true;
+  if (toggleVisual) toggleVisual.checked = false;
+  if (toggleAudio) toggleAudio.checked = false;
 
   if (toggleNarration) toggleNarration.addEventListener('change', updateScriptVisibility);
   if (toggleVisual) toggleVisual.addEventListener('change', updateScriptVisibility);
