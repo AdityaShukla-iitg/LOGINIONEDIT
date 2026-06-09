@@ -965,8 +965,7 @@ NARRATION: Try these in your next video and watch your average view duration soa
     lines.forEach(line => {
       const trimmed = line.trim();
       if (!trimmed) {
-        html += '<br>';
-        return;
+        return; // Skip empty lines to avoid layout spacing issues when elements are hidden
       }
 
       if (trimmed.startsWith('TITLE:')) {
@@ -977,57 +976,10 @@ NARRATION: Try these in your next video and watch your average view duration soa
         html += `<div class="script-header-meta"><strong>Pacing:</strong> ${trimmed.replace('PACING:', '').trim()}</div>`;
       } else if (trimmed.startsWith('HOOK RATE TARGET:')) {
         html += `<div class="script-header-meta"><strong>Hook Rate Target:</strong> ${trimmed.replace('HOOK RATE TARGET:', '').trim()}</div>`;
-      } else if (
-        trimmed === 'THE HOOK' ||
-        trimmed.startsWith('THE HOOK (') ||
-        trimmed === 'THE CONTEXT' ||
-        trimmed.startsWith('THE CONTEXT (') ||
-        trimmed === 'THE PHILOSOPHICAL CONFLICT' ||
-        trimmed.startsWith('THE PHILOSOPHICAL CONFLICT (') ||
-        trimmed === 'THE POWER SYSTEM' ||
-        trimmed.startsWith('THE POWER SYSTEM:') ||
-        trimmed.startsWith('THE POWER SYSTEM (') ||
-        trimmed === 'THE VILLAINS' ||
-        trimmed.startsWith('THE VILLAINS:') ||
-        trimmed.startsWith('THE VILLAINS (') ||
-        trimmed === 'THE WARNING' ||
-        trimmed.startsWith('THE WARNING (') ||
-        trimmed === 'THE CALL TO ACTION' ||
-        trimmed.startsWith('THE CALL TO ACTION (') ||
-        trimmed.startsWith('SECRET ') ||
-        trimmed.startsWith('CALL TO ACTION') ||
-        trimmed.startsWith('THE TRUE HORROR') ||
-        trimmed.startsWith('THE DUO') ||
-        trimmed.startsWith('THE AURA FLEX') ||
-        trimmed.startsWith('THE DEEP LORE') ||
-        trimmed.startsWith('THE BATTLE OF THE YONKOS') ||
-        trimmed.startsWith('THE USOPP\'S REDEMPTION') ||
-        trimmed.startsWith('THE PHANTOM TROUPE') ||
-        trimmed.startsWith('THE GREATEST VILLAIN') ||
-        trimmed.startsWith('THE SHINRABANSHOMAN') ||
-        trimmed.startsWith('THE SOUL EATER CONNECTION') ||
-        trimmed.startsWith('THE PREMISE') ||
-        trimmed.startsWith('THE CONSTELLATIONS') ||
-        trimmed.startsWith('THE REINFORCEMENTS') ||
-        trimmed.startsWith('ENTER RAGNAROK') ||
-        trimmed.startsWith('THE LORE EXPANSION') ||
-        trimmed.startsWith('THE REAL WORLD IMPACT') ||
-        trimmed.startsWith('THE NEW HEAVY HITTERS') ||
-        trimmed.startsWith('THE KASHIMO THREAT') ||
-        trimmed.startsWith('THE MAKI EVOLUTION') ||
-        trimmed.startsWith('THE REALITY CHECK') ||
-        trimmed.startsWith('THE SCALE') ||
-        trimmed.startsWith('THE ENVIRONMENT') ||
-        trimmed.startsWith('THE TRAGEDY') ||
-        trimmed.startsWith('THE ACTION CHOREOGRAPHY') ||
-        trimmed.startsWith('THE ORDER') ||
-        trimmed.startsWith('THE TAKAMURA')
-      ) {
-        html += `<div class="script-section-header">${trimmed}</div>`;
       } else if (trimmed.startsWith('VISUAL:')) {
-        html += `<div class="script-line script-visual"><span class="prefix">VISUAL:</span> ${trimmed.replace('VISUAL:', '').trim()}</div>`;
+        html += `<div class="script-line script-visual"><span class="prefix">VISUAL:</span> <span class="visual-text">${trimmed.replace('VISUAL:', '').trim()}</span></div>`;
       } else if (trimmed.startsWith('AUDIO:')) {
-        html += `<div class="script-line script-audio"><span class="prefix">AUDIO:</span> ${trimmed.replace('AUDIO:', '').trim()}</div>`;
+        html += `<div class="script-line script-audio"><span class="prefix">AUDIO:</span> <span class="audio-text">${trimmed.replace('AUDIO:', '').trim()}</span></div>`;
       } else if (trimmed.startsWith('NARRATION (Hinglish):')) {
         html += `<div class="script-line script-narration"><span class="prefix">NARRATION (Hinglish):</span> <span class="narration-text">${trimmed.replace('NARRATION (Hinglish):', '').trim()}</span></div>`;
       } else if (trimmed.startsWith('NARRATION:')) {
@@ -1035,15 +987,70 @@ NARRATION: Try these in your next video and watch your average view duration soa
       } else if (trimmed.startsWith('Post-Production Note:')) {
         html += `<div class="script-line script-post-note"><span class="prefix">Post-Production Note:</span> ${trimmed.replace('Post-Production Note:', '').trim()}</div>`;
       } else {
-        html += `<div class="script-line-plain">${trimmed}</div>`;
+        // Dynamic check for section header: uppercase words with optional parenthetical annotations
+        const cleanLine = trimmed.replace(/\([^)]*\)/g, '').replace(/[^a-zA-Z\s]/g, '').trim();
+        if (cleanLine.length > 0 && cleanLine === cleanLine.toUpperCase() && /[A-Z]/.test(cleanLine)) {
+          html += `<div class="script-section-header">${trimmed}</div>`;
+        } else {
+          html += `<div class="script-line-plain">${trimmed}</div>`;
+        }
       }
     });
 
     return html;
   }
 
+  // Helper to extract and join only the narration lines from the script text
+  function extractNarration(text) {
+    const lines = text.split('\n');
+    const narrationLines = [];
+    lines.forEach(line => {
+      const trimmed = line.trim();
+      if (trimmed.startsWith('NARRATION (Hinglish):')) {
+        narrationLines.push(trimmed.replace('NARRATION (Hinglish):', '').trim());
+      } else if (trimmed.startsWith('NARRATION:')) {
+        narrationLines.push(trimmed.replace('NARRATION:', '').trim());
+      }
+    });
+    return narrationLines.join('\n\n');
+  }
+
   const shortsTableBody = document.getElementById('shorts-table-body');
   const shortsDetailsList = document.getElementById('shorts-details-list');
+
+  // Checkbox references for script filter
+  const toggleNarration = document.getElementById('toggle-narration');
+  const toggleVisual = document.getElementById('toggle-visual');
+  const toggleAudio = document.getElementById('toggle-audio');
+
+  function updateScriptVisibility() {
+    if (!shortsDetailsList) return;
+    
+    if (toggleNarration && toggleNarration.checked) {
+      shortsDetailsList.classList.add('show-narration');
+    } else {
+      shortsDetailsList.classList.remove('show-narration');
+    }
+
+    if (toggleVisual && toggleVisual.checked) {
+      shortsDetailsList.classList.add('show-visual');
+    } else {
+      shortsDetailsList.classList.remove('show-visual');
+    }
+
+    if (toggleAudio && toggleAudio.checked) {
+      shortsDetailsList.classList.add('show-audio');
+    } else {
+      shortsDetailsList.classList.remove('show-audio');
+    }
+  }
+
+  if (toggleNarration) toggleNarration.addEventListener('change', updateScriptVisibility);
+  if (toggleVisual) toggleVisual.addEventListener('change', updateScriptVisibility);
+  if (toggleAudio) toggleAudio.addEventListener('change', updateScriptVisibility);
+
+  // Synchronize on load
+  updateScriptVisibility();
 
   function renderShorts() {
     if (!shortsTableBody || !shortsDetailsList) return;
@@ -1142,17 +1149,18 @@ NARRATION: Try these in your next video and watch your average view duration soa
         <span>Ready to Copy</span>
       `;
       copyBtn.addEventListener('click', () => {
-        navigator.clipboard.writeText(item.scriptOutline).then(() => {
+        const narrationText = extractNarration(item.scriptOutline);
+        navigator.clipboard.writeText(narrationText).then(() => {
           copyBtn.classList.add('copied');
           const span = copyBtn.querySelector('span');
           const origText = span.textContent;
-          span.textContent = 'Copied!';
+          span.textContent = 'Copied Narration!';
           setTimeout(() => {
             copyBtn.classList.remove('copied');
             span.textContent = origText;
           }, 1500);
         }).catch(err => {
-          console.error('Failed to copy script: ', err);
+          console.error('Failed to copy script narration: ', err);
         });
       });
       content.appendChild(copyBtn);
